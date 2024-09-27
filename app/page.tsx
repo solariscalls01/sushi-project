@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from "react";
 import Image from "next/image";
-import Header from '../components/Header';
-import Footer from '../components/Footer'
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
 
       {/* Main content area */}
-      <div style={{ padding: '20px' }}>
+      <div style={{ padding: "20px" }}>
         <h1>Welcome to Our Sushi Restaurant</h1>
         <p>Experience the finest sushi with us!</p>
       </div>

@@ -6,7 +6,7 @@ import NavLinks from "@/components/Nav-links";
 
 export default function Home() {
   return (
-    <div >
+    <div>
       {/* Include the DrawerAppBar component */}
       <Header />
 

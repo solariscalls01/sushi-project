@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <div>
       <NavBar />
-        <h1>Contact Coming Soon</h1>
+      <h1>Contact Coming Soon</h1>
       <Footer />
     </div>
   );

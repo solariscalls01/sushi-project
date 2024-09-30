@@ -15,14 +15,14 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import NavLinks from "./Nav-links";
 import Link from "next/link";
-import styles from '../app/ui/global.css'
+import styles from "../app/ui/global.css";
 
 const drawerWidth = 240;
 const navItems = [
-  { name: 'About Us', href: "/about" },
+  { name: "About Us", href: "/about" },
   { name: "Menu", href: "/menu" },
   { name: "Contact Us", href: "/contact" },
-  { name: "Reservations", href: "/reservations" }
+  { name: "Reservations", href: "/reservations" },
 ];
 
 function DrawerAppBar(props) {
@@ -39,7 +39,12 @@ function DrawerAppBar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <Link key={item.name} href={item.href} passHref style={{ width: '100%' }}>
+            <Link
+              key={item.name}
+              href={item.href}
+              passHref
+              style={{ width: "100%" }}
+            >
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary={item.name} />
               </ListItemButton>
@@ -47,7 +52,7 @@ function DrawerAppBar(props) {
           </ListItem>
         ))}
       </List>
-    </Box >
+    </Box>
   );
 
   const container =
@@ -57,8 +62,8 @@ function DrawerAppBar(props) {
     <Box sx={{ display: "flex" }} className={styles.container}>
       <CssBaseline />
       <AppBar component="nav">
-        <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Box sx={{flexGrow: 1}}/>
+        <Toolbar sx={{ justifyContent: "space-between" }}>
+          <Box sx={{ flexGrow: 1 }} />
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -91,14 +96,16 @@ function DrawerAppBar(props) {
               keepMounted: true, // Better open performance on mobile.
             }}
             sx={{
-              display: { xs: 'block', sm: 'none' },
-              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+              display: { xs: "block", sm: "none" },
+              "& .MuiDrawer-paper": {
+                boxSizing: "border-box",
+                width: drawerWidth,
+              },
             }}
           >
             {drawer}
           </Drawer>
         </nav>
-
       </Box>
     </Box>
   );

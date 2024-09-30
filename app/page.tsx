@@ -1,11 +1,12 @@
 import * as React from "react";
 import Image from "next/image";
-import Header from "../components/Header";
+import Header from "../components/NavBar";
 import Footer from "../components/Footer";
+import NavLinks from "@/components/Nav-links";
 
 export default function Home() {
   return (
-    <>
+    <div >
       {/* Include the DrawerAppBar component */}
       <Header />
 
@@ -15,6 +16,6 @@ export default function Home() {
         <p>Experience the finest sushi with us!</p>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

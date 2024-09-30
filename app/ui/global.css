@@ -1,0 +1,12 @@
+body {
+    background-color: #FCFAEE;
+    margin: 0; /* Optional: remove default margin */
+    height: 100vh; /* Optional: ensures full height coverage */
+}
+
+/* styles.css */
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .nav-links {
+        display: none; /* Hide the nav links on mobile */
+    }
+}

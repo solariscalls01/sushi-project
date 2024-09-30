@@ -1,11 +1,12 @@
 import * as React from "react";
 import Image from "next/image";
-import Header from "../../components/NavBar";
+import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 export default function Page() {
   return (
     <div>
-      <Header />
+      <NavBar />
+        <h1>Contact Coming Soon</h1>
       <Footer />
     </div>
   );

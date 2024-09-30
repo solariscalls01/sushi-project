@@ -1,6 +1,5 @@
 "use client";
 import * as React from "react";
-import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -14,10 +13,17 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+import NavLinks from "./Nav-links";
+import Link from "next/link";
+import styles from '../app/ui/global.css'
 
 const drawerWidth = 240;
-const navItems = ["About Us", "Menu", "Contact Us", "Reservations"];
+const navItems = [
+  { name: 'About Us', href: "/about" },
+  { name: "Menu", href: "/menu" },
+  { name: "Contact Us", href: "/contact" },
+  { name: "Reservations", href: "/reservations" }
+];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -29,34 +35,34 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        DAIMONJI SUSHI
-      </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
+          <ListItem key={item.name} disablePadding>
+            <Link key={item.name} href={item.href} passHref style={{ width: '100%' }}>
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <ListItemText primary={item.name} />
+              </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List>
-    </Box>
+    </Box >
   );
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex" }} className={styles.container}>
       <CssBaseline />
       <AppBar component="nav">
-        <Toolbar>
+        <Toolbar sx={{ justifyContent: 'space-between' }}>
+          <Box sx={{flexGrow: 1}}/>
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            edge="start"
+            edge="end"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
@@ -67,55 +73,35 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            DAIMONJI SUSHI
+            <Link href="/" passHref style={{ color: "#fff" }} underline="hover">
+              {"DAIMONJI SUSHI"}
+            </Link>
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
-            ))}
-          </Box>
+          <NavLinks />
         </Toolbar>
       </AppBar>
-      <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
       <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
-        <Typography>
-          Voluptates perspiciatis, in pariatur impedit, nam facilis libero
-          dolorem dolores sunt inventore perferendis, aut sapiente modi
-          nesciunt.
-        </Typography>
+        <nav>
+          <Drawer
+            container={container}
+            variant="temporary"
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            ModalProps={{
+              keepMounted: true, // Better open performance on mobile.
+            }}
+            sx={{
+              display: { xs: 'block', sm: 'none' },
+              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            }}
+          >
+            {drawer}
+          </Drawer>
+        </nav>
+
       </Box>
     </Box>
   );
 }
-
-DrawerAppBar.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
 
 export default DrawerAppBar;

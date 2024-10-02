@@ -35,7 +35,13 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+      <Typography variant="h6">
+        <Link href="/" passHref style={{ color: "#023859" }} underline="hover">
+          {"DAIMONJI SUSHI"}
+        </Link>
+      </Typography>
       <Divider />
+
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
@@ -59,7 +65,7 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }} className={styles.container}>
+    <Box sx={{ display: "flex", width: '100%' }} className={styles.container}>
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar sx={{ justifyContent: "space-between" }}>

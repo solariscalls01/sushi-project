@@ -14,11 +14,11 @@ const links = [
 
 export default function NavLinks() {
   const pathname = usePathname();
-  const [drawerOpen, setDrawerOpen] = useState(false);
-
-  const toggleDrawerOpen = () => {
-    setDrawerOpen(!drawerOpen);
-  };
+  
+  // const [drawerOpen, setDrawerOpen] = useState(false);
+  // const toggleDrawerOpen = () => {
+  //   setDrawerOpen(!drawerOpen);
+  // };
 
   return (
     <div className={"flex flex-row gap-4 nav-links"}>

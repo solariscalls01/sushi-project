@@ -4,6 +4,10 @@ body {
   height: 100vh; 
 }
 
+.section {
+  background-color: #b8011f;
+}
+
 /* styles.css */
 @media (max-width: 768px) {
   

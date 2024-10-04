@@ -1,7 +1,7 @@
 body {
   background-color: #fcfaee;
-  margin: 0; 
-  height: 100vh; 
+  margin: 0;
+  height: 100vh;
 }
 
 .section {
@@ -10,7 +10,6 @@ body {
 
 /* styles.css */
 @media (max-width: 768px) {
-  
   .nav-links {
     display: none; /* Hide the nav links on mobile */
   }

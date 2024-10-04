@@ -65,7 +65,7 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex", width: '100%' }} className={styles.container}>
+    <Box sx={{ display: "flex", width: "100%" }} className={styles.container}>
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar sx={{ justifyContent: "space-between" }}>

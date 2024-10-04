@@ -20,7 +20,7 @@ export default function MenuImageList() {
                             alt={item.title}
                             loading="lazy"
                             className="w-3/4 h-auto object-cover mx-auto"
-                            style={{maxWidth: '350px', minWidth: '300px', borderRadius: '10px'}}
+                            style={{maxWidth: '500px', minWidth: '300px', borderRadius: '10px'}}
                         />
                         <div className="mt-3 text-center">{item.title}</div>
                     </div>

@@ -14,7 +14,8 @@ export default function HomepageMap() {
                     gap: 4,
                     my: 4,
                     mx: "auto",
-                    margin: 0
+                    margin: 0,
+                    padding: '1.1rem'
                 }}
             >
                 <Box sx={{ width: "50%", display: "flex", justifyContent: "center" }}>
@@ -24,9 +25,9 @@ export default function HomepageMap() {
                         <Image
                             src="/images/daimonji-map.png"
                             alt="Alex with his family"
-                            width={400}
+                            width={350}
                             height={200}
-                            style={{ cursor: "pointer" }}
+                            style={{ cursor: "pointer", borderRadius: '10px', minWidth: '150px' }}
                         />
                     </Link>
                 </Box>

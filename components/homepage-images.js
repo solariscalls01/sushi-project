@@ -11,7 +11,7 @@ export default function MenuImageList() {
     return (
         // Using the box wrapper to wrap the header component for better styling
         <div className="w-full h-auto mb-4 flex justify-center mt-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
                 {itemData.map((item) => (
                     <div key={item.img} className="p-4">
                         <img 
@@ -20,7 +20,7 @@ export default function MenuImageList() {
                             alt={item.title}
                             loading="lazy"
                             className="w-3/4 h-auto object-cover mx-auto"
-                            style={{maxWidth: '400px', minWidth: '250px'}}
+                            style={{maxWidth: '350px', minWidth: '300px', borderRadius: '10px'}}
                         />
                         <div className="mt-3 text-center">{item.title}</div>
                     </div>
@@ -32,16 +32,16 @@ export default function MenuImageList() {
 
 const itemData = [
     {
-        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+        img: '/images/california-roll.png',
         title: 'California Roll',
     },
     {
-        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+        img: '/images/sashimi-platter.png',
         title: 'Sashimi Platter',
     },
     {
-        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-        title: 'Allison Roll',
+        img: '/images/rainbow-roll.png',
+        title: 'Rainbow Roll',
     },
 ];
 

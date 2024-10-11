@@ -77,7 +77,7 @@ export default function Page() {
           >
             {/* Title */}
             <Typography variant="h4" component="h2" sx={{ color: "#fff" }}>
-              Daimonji's Philosophy
+              Daimonji&apos;s Philosophy
             </Typography>
 
             {/* Small Text Box */}

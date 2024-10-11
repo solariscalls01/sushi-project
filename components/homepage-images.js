@@ -1,10 +1,4 @@
 import * as React from "react";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
-import ListSubheader from "@mui/material/ListSubheader";
-import { Box, Grid2 } from "@mui/material";
-import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 
 export default function MenuImageList() {
   return (

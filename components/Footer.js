@@ -15,7 +15,7 @@ export default function SimpleBottomNavigation() {
 
   return (
     <footer>
-      <Box sx={{ bgcolor: "#B8001F", color: "#fff", p: 2 }}>
+      <Box sx={{ bgcolor: "#B8001F", color: "#fff", p: 2}}>
         {/* Contact Information - Top Left */}
         <Box sx={{ mb: 2 }}>
           <Typography variant="h6" gutterBottom>
@@ -106,7 +106,7 @@ export default function SimpleBottomNavigation() {
         </Box>
         <Box sx={{ textAlign: "center" }}>
           <Typography variant="h6" sx={{ fontSize: "10px" }}>
-            ©Copyright 2024
+            © 2024 Daimonji Sushi, Inc.
           </Typography>
         </Box>
       </Box>

@@ -7,6 +7,7 @@ import { Typography, Box } from "@mui/material";
 export default function Page() {
   return (
     <div>
+   
       <NavBar />
       {/* Section to create the left area for the image */}
       <Box
@@ -39,12 +40,12 @@ export default function Page() {
           }}
         >
           {/* Title */}
-          <Typography variant="h4" component="h2">
+          <Typography variant="h4" component="h2" sx={{fontFamily:"Lobster"}}>
             Our Story
           </Typography>
 
           {/* Small Text Box */}
-          <Typography variant="body1" sx={{ width: "100%" }}>
+          <Typography variant="body1" sx={{ width: "100%", fontFamily:'Noto' }}>
             Our journey began as a simple dream fueled by a shared love for
             sushi and the desire to bring authentic Japanese flavors to our
             community. As more customers discovered us and word of mouth spread,
@@ -76,12 +77,12 @@ export default function Page() {
             }}
           >
             {/* Title */}
-            <Typography variant="h4" component="h2" sx={{ color: "#fff" }}>
+            <Typography variant="h4" component="h2" sx={{ color: "#fff", fontFamily:'Lobster' }}>
               Daimonji&apos;s Philosophy
             </Typography>
 
             {/* Small Text Box */}
-            <Typography variant="body1" sx={{ width: "100%", color: "#fff" }}>
+            <Typography variant="body1" sx={{ width: "100%", color: "#fff", fontFamily:'Noto' }}>
               Our philosophy centers around crafting memorable dining
               experiences by combining the finest ingredients with meticulous
               attention to detail. We believe in creating dishes that celebrate

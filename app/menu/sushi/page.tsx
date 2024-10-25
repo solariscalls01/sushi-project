@@ -6,18 +6,17 @@ import NavLinksMenu from "../dashboard/nav-links";
 export default function Page() {
   const theme = createTheme();
   theme.spacing(24);
-  console.log(`navlinks menu: ${NavLinksMenu}`)
   return (
     <div>
       <Header />
       <Typography variant="h2" sx={{ justifyContent: 'center', textAlign: 'center', mt: 3, mb: 3 }}> Menu</Typography>
       <Box sx={{ display: 'flex', width: '100%', gap: 2 }}>
-        {/* Left Menu (Fixed Width) */}
+        {/* Left Menu */}
         <Box sx={{ border: '1px solid black' }}>
           <NavLinksMenu />
         </Box>
 
-        {/* Right Side Content (Takes Remaining Space) */}
+        {/* Right Side Box */}
         <Box sx={{ flex: 1, border: '1px solid black', padding: 2 }}>
           <Typography variant="h3" sx={{ textAlign: 'center' }}>
             Sushi

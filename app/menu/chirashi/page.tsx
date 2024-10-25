@@ -6,7 +6,6 @@ import NavLinksMenu from "../dashboard/nav-links";
 export default function Page() {
   const theme = createTheme();
   theme.spacing(24);
-  console.log(`navlinks menu: ${NavLinksMenu}`)
   return (
     <div>
       <Header />

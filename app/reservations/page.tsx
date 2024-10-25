@@ -6,8 +6,8 @@ export default function Page() {
     return (
         <div>
             <NavBar />
-            <Typography variant="h1" sx={{ justifyContent: 'center', textAlign: 'center', fontFamily:'Roboto Flex' }}>
-                Contacts page
+            <Typography variant="h1" sx={{ justifyContent: 'center', textAlign: 'center' }}>
+                Reservations page
             </Typography>
             <Footer />
         </div>

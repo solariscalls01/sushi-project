@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Noto_Sans } from "next/font/google";
 
-const notoSans = Noto_Sans ({
-  subsets:['latin'],
-  weight: ['600']
-})
+const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  weight: ["600"],
+});
 
 export const metadata: Metadata = {
   title: "Daimonji Sushi",
@@ -19,11 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={notoSans.className}
-      >
-        {children}
-      </body>
+      <body className={notoSans.className}>{children}</body>
     </html>
   );
 }

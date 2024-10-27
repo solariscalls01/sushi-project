@@ -28,7 +28,7 @@ async function seedAlcohol() {
     ),
   );
 
-  return seedAlcohol;
+  return insertedAlcohol;
 }
 
 async function seedDrinks() {

@@ -66,49 +66,49 @@ const appetizers = [
     price: 6,
     description:
       "Experience the delightful crunch of our fresh, tender edamame, lightly salted for the perfect, savory snack.",
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/appetizers/edamame.jpg",
   },
   {
     name: "Seaweed Salad",
     price: 6,
     description:
       "A refreshing mix of tender seaweed, crisp vegetables, and a tangy sesame dressing",
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/appetizers/seaweed-salad.jpg",
   },
   {
     name: "Agadashi Tofu",
     price: 9,
     description:
       "Savor our lightly crispy agadashi tofu, served in a delicate dashi broth, garnished with green onions and grated daikon for a touch of umami perfection.",
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/appetizers/agadashi-tofu.jpg",
   },
   {
     name: "Gyoza",
     price: 8,
     description:
       "Filled with a perfect blend of juicy pork and fresh vegetables, pan-fried to crispy perfection and served with a tangy dipping sauce",
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/appetizers/gyoza.jpg",
   },
   {
     name: "Chicken Karage",
     price: 9,
     description:
       "Marinated to perfection and deep-fried for a golden, crispy finish, served with a zesty lemon wedge",
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/appetizers/chicken-karage.jpg",
   },
   {
     name: "Daimonji Wings",
     price: 8,
     description:
       "Try our irresistible chicken wings, perfectly crispy and coated in a tangy, spicy sauce that will keep you coming back for more",
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/appetizers/chicken-wings.jpg",
   },
   {
     name: "Fried Oysters",
     price: 10,
     description:
       "Treat yourself to our golden fried oysters, perfectly breaded and crispy, served with a tangy dipping sauce for an irresistible bite",
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/appetizers/fried-oysters.jpg",
   },
   {
     name: "Ika (Squid Salad)",
@@ -122,21 +122,21 @@ const appetizers = [
     price: 4,
     description:
       "Warm up with our comforting miso soup, featuring a savory broth infused with miso paste, tofu cubes, and wakame seaweed, garnished with fresh green onions",
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/appetizers/miso-soup.jpg",
   },
   {
     name: "Veggie Tempura",
     price: 10,
     description:
       "A crispy assortment of seasonal vegetables, lightly battered and fried to golden perfection. A classic favorite that pairs perfectly with our tangy dipping sauce",
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/appetizers/veggie-tempura.jpg",
   },
   {
     name: "Okonomiyaki (Japanese Pancake)",
     price: 16,
     description:
       "A Japanese pancake loaded with fresh ingredients like cabbage, green onions, and tender pork or seafood, all topped with tangy okonomiyaki sauce, creamy mayo, and a sprinkle of bonito flakes. It’s a flavor explosion on your plate!",
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/appetizers/okonomiyaki.jpg",
   },
 ];
 

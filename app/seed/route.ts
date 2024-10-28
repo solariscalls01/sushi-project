@@ -298,7 +298,6 @@ async function seedVeggieRolls() {
 
 export async function GET() {
   try {
-    await client.sql`DROP TABLE if exists revenue`;
     await client.sql`BEGIN`;
     await seedAppetizers();
     await seedAlcohol();

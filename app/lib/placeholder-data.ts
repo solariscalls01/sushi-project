@@ -6,14 +6,14 @@ const alcohol = [
     price_small: 6,
     price_large: 9,
     description: null,
-    image_url: "null",
+    image_url: "https://d1ynl4hb5mx7r8.cloudfront.net/wp-content/uploads/2021/05/25125746/592447169.asd_.25oz.can_-768x768.png",
   },
   {
     name: "Plum Wine",
     price_small: 6,
     price_large: null,
     description: "null",
-    image_url: "null",
+    image_url: "https://media.istockphoto.com/id/1291170323/photo/close-up-of-tables-tableware-and-a-cup-of-plum-wine-in-a-japanese-restaurant.jpg?s=2048x2048&w=is&k=20&c=Nb69rXe0TA5HZFOfczoIPjX2gUJhKUjZKhzRAjmZukU=",
   },
   {
     name: "Red or White Wine",
@@ -34,14 +34,14 @@ const alcohol = [
     price_small: 14,
     price_large: null,
     description: "Super Dry Sake",
-    image_url: "null",
+    image_url: "https://www.truesake.com/cdn/shop/products/JG132-02_HarushikaJunmaiGinjo_720ml_WM_1036x1555.png?v=1675378984",
   },
   {
     name: "Nigori Sake",
     price_small: 14,
     price_large: null,
     description: "Sweet Unfiltered Rice Sake",
-    image_url: "null",
+    image_url: "https://nomageddon.com/wp-content/uploads/2017/04/Nigori-Sake-2.jpg",
   },
   {
     name: "Nama Organic Sake",
@@ -49,14 +49,14 @@ const alcohol = [
     price_large: null,
     description:
       "An unpasteurized sake that captures the esence of fresh, natural flavors, offering a crips and vibrant taste with every sip.",
-    image_url: "null",
+    image_url: "https://shop.takarasake.com/cdn/shop/products/D_SCB_20Organic_20Nama_20300ml_p20_l_p20_z1000.png?v=1708427682",
   },
   {
     name: "House Hot Sake",
     price_small: 6,
     price_large: 8,
     description: "null",
-    image_url: "null",
+    image_url: "https://media.istockphoto.com/id/1297277631/photo/sake-pouring-traditional-distilled-and-fermented-alcohol-from-japan-served-hot-black.jpg?s=2048x2048&w=is&k=20&c=DqY0DSx9CmudCuiplBJHoT4tZdROUac_45LTSKEFm0s=",
   },
 ];
 
@@ -168,13 +168,13 @@ const chirashi = [
     name: "Salmon Don",
     price: 23,
     description: "Fresh salmon and Ikura on sushi rice",
-    image_url: "null",
+    image_url: "https://media.istockphoto.com/id/1431526155/photo/spicy-salmon-don.jpg?s=1024x1024&w=is&k=20&c=WYfAtIeSk2UGpbRUVK3Ofg_iu-EsTuEFhNYTZppxqnk=",
   },
   {
     name: "Tuna Don",
     price: 23,
     description: "Fresh tuna on sushi rice",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2017/08/01/08/48/sashimi-2563650_1280.jpg",
   },
   {
     name: "Poke Don",
@@ -186,7 +186,7 @@ const chirashi = [
     name: "Unagi Don",
     price: 25,
     description: "Broiled fresh water eel on rice and avocado",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2023/04/27/04/08/unagi-7953712_1280.jpg",
   },
   {
     name: "Daimonji Deluxe",
@@ -201,12 +201,12 @@ const drinks = [
   {
     name: "Coke / Diet Coke / Sprite",
     price: 2.5,
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2015/10/13/21/12/soft-drink-986803_1280.jpg",
   },
   {
     name: "Green Tea",
     price: 2.5,
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2017/05/30/12/21/tea-2356770_1280.jpg",
   },
   {
     name: "Lemonade / Apple Juice",
@@ -221,13 +221,13 @@ const handrolls = [
     price: 6,
     description:
       "Succulent Salmon and Creamy Avocado, all wrapped in Nori and vinegared rice",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2018/05/26/18/53/avocado-3432007_1280.jpg",
   },
   {
     name: "Four Season",
     price: 8.5,
     description: "Tuna, Salmon, Yellowtail, Albacore, Green Onions",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2024/05/02/18/08/rolls-8735316_1280.jpg",
   },
   {
     name: "Spicy Tuna",
@@ -250,8 +250,8 @@ const nigiri = [
     name: "Maguro (Tuna)",
     price_nigiri: 7.5,
     price_sashimi: 15,
-    image_url: null, // Set to null for now
-    market_price: null, // Set to null for now
+    image_url: null,
+    market_price: null,
   },
   {
     name: "Hamashi (Yellow Tail)",
@@ -344,26 +344,26 @@ const noodles = [
     name: "Tonkotsu Ramen",
     price: 14,
     description: "Savory pork broth, housemade chasu, egg, and seawweed",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2022/05/10/18/50/ramen-7187810_1280.jpg",
   },
   {
     name: "Tempura Udon",
     price: 16,
     description: "Savory broth, udon, shrimp, and veggie tempura",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2019/03/19/10/12/udon-noodles-4065311_1280.jpg",
   },
   {
     name: "Beef Sukiyaki",
     price: 19,
     description:
       "Rich broth, thinly sliced beef, soft tofu, udon, veggies, and rice",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2022/01/11/11/51/dish-6930432_1280.jpg",
   },
   {
     name: "Yakisoba",
     price: 14,
     description: "Stir fry noodles with a choice of beef, chicken, or veggie",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2021/07/12/06/15/yakisoba-6405452_1280.jpg",
   },
 ];
 
@@ -502,7 +502,6 @@ const rolls = [
 
 const signatureCombo = [
   {
-    id: "1",
     name: "Daimonji Sampler",
     price: 27,
     description:
@@ -510,7 +509,6 @@ const signatureCombo = [
     image_url: "null",
   },
   {
-    id: "2",
     name: "Sushi Combo",
     price: 25,
     description:
@@ -518,7 +516,6 @@ const signatureCombo = [
     image_url: "null",
   },
   {
-    id: "3",
     name: "Sashimi Combo",
     price: 28,
     description: "Yellowtail, salmon, tuna, albacore, ebi, and miso soup",
@@ -531,43 +528,43 @@ const signatureDishes = [
     name: "Curry Katsu Donburi",
     price: 16.5,
     description: "Chicken or Pork with house curry over rice",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2015/10/01/14/29/curry-967086_1280.jpg",
   },
   {
     name: "Nikku Beef Donburi",
     price: 17,
     description: "Simmered beef & onions on bowl of rice",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2021/07/07/19/10/donburi-6395130_1280.jpg",
   },
   {
     name: "Kasuzuke Black Cod (2 Pieces)",
     price: 28,
     description: "House marinated Alaskan black cod with rice & salad",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2018/11/19/05/37/food-3824648_1280.jpg",
   },
   {
     name: "Saba Shio",
     price: 18.5,
     description: "Grilled mackerel with sea salt & pepper with rice & salad",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2018/04/28/16/09/mackerel-3357565_1280.jpg",
   },
   {
     name: "Teriyaki Chicken or Beef",
     price: 17.5,
     description: "Teriyaki sauce with onions and rice",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2022/06/07/21/00/chicken-7249273_1280.jpg",
   },
   {
     name: "Teriyaki Salmon",
     price: 19.5,
     description: "Grilled Atlantic salmon with rice & salad",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg",
   },
   {
     name: "Tempura Dinner",
     price: 19,
     description: "Assorted shrimp, yam, squash, green beans & rice",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2020/04/20/07/28/japan-food-5066736_1280.jpg",
   },
   {
     name: "Daimonji Dinner Combo",
@@ -583,20 +580,20 @@ const veggieRoll = [
     name: "Avocado",
     price: 6,
     description: "Creamy Avocado slices wrapped in Vinegared Rice and Nori",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2017/08/07/21/53/sushi-2608281_1280.jpg",
   },
   {
     name: "Cucumber",
     price: 6,
     description: "Crunchy Cucumber wrapped in Vinegared Rice and Nori",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2015/04/10/15/59/maki-716432_1280.jpg",
   },
   {
     name: "Cucumber Avocado",
     price: 8,
     description:
       "Crisp Cucumber and Creamy Avocado combine with Vinegared Rice and Nori",
-    image_url: "null",
+    image_url: "https://cdn.pixabay.com/photo/2017/03/02/20/53/sushi-2112350_1280.jpg",
   },
   {
     name: "Ume Shiso",

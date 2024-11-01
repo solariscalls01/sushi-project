@@ -1,4 +1,4 @@
-import { Card, CardMedia } from "@mui/material";
+import { CardMedia } from "@mui/material";
 
 export default function BackgroundImg() {
 

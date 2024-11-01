@@ -3,7 +3,7 @@ import Header from "../components/NavBar";
 import Footer from "../components/Footer";
 import HomepageMap from "../components/homepage-map-hours";
 import MenuImageList from "../components/homepage-images";
-import BackgroundImg from "../components/BackgroundImg";
+import BackgroundImg from "../components/homepage-background";
 
 export default function Home() {
   return (

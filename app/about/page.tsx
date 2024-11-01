@@ -7,14 +7,16 @@ import BackgroundImg from "@/components/homepage-background";
 
 export default function Page() {
   return (
-    <div>
+    <div style={{
+      width: "70%",
+      margin: "auto",
+    }}>
       <NavBar />
-      <BackgroundImg />
       {/* Section to create the left area for the image */}
       <Box
         sx={{
           display: "flex",
-          flexDirection: {xs: "column", sm: "row"},
+          flexDirection: { xs: "column", sm: "row" },
           alignItems: "center",
           gap: 4,
           my: 6,
@@ -72,7 +74,7 @@ export default function Page() {
         <Box
           sx={{
             display: "flex",
-            flexDirection: {xs: "column", sm: "row"},
+            flexDirection: { xs: "column", sm: "row" },
             alignItems: "center",
             gap: 4,
             my: 6,
@@ -158,8 +160,7 @@ export default function Page() {
           </Box>
         </Box>
       </Box>
-
-      <Footer />
+    <Footer />
     </div>
   );
 }

@@ -7,8 +7,8 @@ import clsx from "clsx";
 const links = [
   { name: "About Us", href: "/about" },
   { name: "Menu", href: "/menu" },
-  // { name: "Contact Us", href: "/contact" },  // Seems redundant to have considering footer has this information as well as homepage 
-  { name: "Reservations", href: "/reservations" },
+  { name: "To Go", href: "/togo" },  
+  // { name: "Reservations", href: "/reservations" },
 ];
 
 export default function NavLinks() {

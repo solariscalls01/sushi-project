@@ -1,8 +1,16 @@
 import Card from "@mui/material/Card";
 import { CardMedia } from "@mui/material";
 
-// VIDEO IS ONLY SAMPLE VIDEO. NOT TAKEN FROM RESTAURANT
-export default function BackgroundVideo() {
+export default function CarouselImage() {
+
+const imageCarousel = [
+  "/images/homepage-1.jpg",
+  "/images/homepage-2.jpg",
+  "/images/homepage-3.jpg",
+  "/images/homepage-4.jpg",
+  "/images/homepage-5.jpg",
+]
+
   return (
     <div>
       <Card
@@ -14,13 +22,14 @@ export default function BackgroundVideo() {
         }}
       >
         <CardMedia
-          component="video"
-          src="/videos/background-home.mp4"
-          autoPlay
-          loop
-          muted
+          component="img"
+          src="/images/uni.jpg"
           sx={{
-            width: "100%",
+            padding:"1.5rem",
+            borderRadius:"2rem",
+            maxWidth:"500px",
+            maxHeight:400,
+            // width: "100%",
             height: "auto",
             objectFit: "cover",
           }}

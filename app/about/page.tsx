@@ -12,17 +12,20 @@ export default function Page() {
       <Box
         sx={{
           display: "flex",
+          flexDirection: {xs: "column", sm: "row"},
           alignItems: "center",
           gap: 4,
-          my: 4,
+          my: 6,
           mx: "auto",
           maxWidth: "1200px",
+          pl: 4,
+          pr: 4
         }}
       >
         <Box sx={{ flex: "1 1 50%" }}>
           <Image
             src="/images/our-story.jpg"
-            alt="Alex with his family"
+            alt="Stephanie"
             width={350}
             height={200}
             style={{ borderRadius: "10px" }}
@@ -50,7 +53,7 @@ export default function Page() {
           {/* Small Text Box */}
           <Typography
             variant="body1"
-            sx={{ width: "100%", fontFamily: "Noto" }}
+            sx={{ width: "100%", fontFamily: "Noto", }}
           >
             Our journey began as a simple dream fueled by a shared love for
             sushi and the desire to bring authentic Japanese flavors to our
@@ -67,11 +70,14 @@ export default function Page() {
         <Box
           sx={{
             display: "flex",
+            flexDirection: {xs: "column", sm: "row"},
             alignItems: "center",
             gap: 4,
-            my: 4,
+            my: 6,
             mx: "auto",
             maxWidth: "1200px",
+            pl: 4,
+            pr: 4
           }}
         >
           <Box

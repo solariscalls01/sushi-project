@@ -4,20 +4,24 @@ import { Typography, Box, Link } from "@mui/material";
 
 export default function HomepageMap() {
   return (
-    <div className="section">
+    <div className="section" style={{
+      width: "80%",
+      margin: "auto",
+      display: "flex",
+      alignItems:"center",
+    }}>
       {/* Section to create the left area for the image */}
       <Box
         sx={{
           display: "flex",
+          flexDirection: {xs: "column", sm: "row"},
           alignItems: "center",
-          gap: 4,
           my: 4,
-          mx: "auto",
-          margin: 0,
-          padding: "1.1rem",
+          padding: 3,
+
         }}
       >
-        <Box sx={{ width: "50%", display: "flex", justifyContent: "center" }}>
+        <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <Link
             target="_blank"
             rel="noopener noreferrer"

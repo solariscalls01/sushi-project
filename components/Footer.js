@@ -14,7 +14,10 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <footer>
+    <footer style={{
+      width: "70%",
+      margin: "auto",
+    }}>
       <Box sx={{ bgcolor: "#B8001F", color: "#fff", p: 2 }}>
         {/* Contact Information - Top Left */}
         <Box sx={{ mb: 2 }}>

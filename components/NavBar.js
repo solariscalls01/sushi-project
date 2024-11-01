@@ -65,55 +65,61 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex", width: "100%" }} className={styles.container}>
-      <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Box sx={{ flexGrow: 1 }} />
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            <Link href="/" passHref style={{ color: "#fff" }} underline="hover">
-              {"DAIMONJI SUSHI"}
-            </Link>
-          </Typography>
-          <NavLinks />
-        </Toolbar>
-      </AppBar>
-      <Box component="main" sx={{ p: 3 }}>
-        <nav>
-          <Drawer
-            container={container}
-            variant="temporary"
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
-            }}
-            sx={{
-              display: { xs: "block", sm: "none" },
-              "& .MuiDrawer-paper": {
-                boxSizing: "border-box",
-                width: drawerWidth,
-              },
-            }}
-          >
-            {drawer}
-          </Drawer>
-        </nav>
+    <div style={{
+      width: "70%",
+      margin: "auto",
+    }}>
+
+      <Box sx={{ display: "flex", width: "100%" }} className={styles.container}>
+        <CssBaseline />
+        <AppBar component="nav">
+          <Toolbar sx={{ justifyContent: "space-between" }}>
+            <Box sx={{ flexGrow: 1 }} />
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="end"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: "none" } }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            >
+              <Link href="/" passHref style={{ color: "#fff" }} underline="hover">
+                {"DAIMONJI SUSHI"}
+              </Link>
+            </Typography>
+            <NavLinks />
+          </Toolbar>
+        </AppBar>
+        <Box component="main" sx={{ p: 3 }}>
+          <nav>
+            <Drawer
+              container={container}
+              variant="temporary"
+              open={mobileOpen}
+              onClose={handleDrawerToggle}
+              ModalProps={{
+                keepMounted: true, // Better open performance on mobile.
+              }}
+              sx={{
+                display: { xs: "block", sm: "none" },
+                "& .MuiDrawer-paper": {
+                  boxSizing: "border-box",
+                  width: drawerWidth,
+                },
+              }}
+            >
+              {drawer}
+            </Drawer>
+          </nav>
+        </Box>
       </Box>
-    </Box>
+    </div>
   );
 }
 

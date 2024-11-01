@@ -3,7 +3,13 @@ import * as React from "react";
 export default function MenuImageList() {
   return (
     // Using the box wrapper to wrap the header component for better styling
-    <div className="w-full h-auto mb-4 flex justify-center mt-6">
+    <div className="w-full h-auto mb-4 flex justify-center mt-6"
+      style={{
+        width: "70%",
+        margin: "auto",
+        display: "flex",
+        alignItems: "center",
+      }}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
         {itemData.map((item) => (
           <div key={item.img} className="p-4">
@@ -17,8 +23,8 @@ export default function MenuImageList() {
                 style={{
                   maxWidth: "300px",
                   minWidth: "200px",
-                  minHeight: "300px",
-                  maxHeight: "300px",
+                  minHeight: "200px",
+                  maxHeight: "200px",
                   borderRadius: "10px",
                 }}
               />

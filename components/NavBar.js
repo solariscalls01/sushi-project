@@ -17,7 +17,7 @@ import NavLinks from "./Nav-links";
 import Link from "next/link";
 import styles from "../app/ui/global.css";
 
-const drawerWidth = 240;
+const drawerWidth = 240; // Adjust this width as necessary
 const navItems = [
   { name: "About Us", href: "/about" },
   { name: "Menu", href: "/menu" },
@@ -65,14 +65,10 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <div style={{
-      width: "70%",
-      margin: "auto",
-    }}>
-
-      <Box sx={{ display: "flex", width: "100%" }} className={styles.container}>
+    <> {/* Outer div full width */}
+      <Box sx={{ display: "flex", justifyContent: "center", width: "10%" }} className={styles.container}>
         <CssBaseline />
-        <AppBar component="nav">
+        <AppBar component="nav" sx={{ width: "100%"}}> {/* Set width to 50% and center it */}
           <Toolbar sx={{ justifyContent: "space-between" }}>
             <Box sx={{ flexGrow: 1 }} />
             <IconButton
@@ -110,7 +106,7 @@ function DrawerAppBar(props) {
                 display: { xs: "block", sm: "none" },
                 "& .MuiDrawer-paper": {
                   boxSizing: "border-box",
-                  width: drawerWidth,
+                  width: drawerWidth, // Set drawer width
                 },
               }}
             >
@@ -119,7 +115,7 @@ function DrawerAppBar(props) {
           </nav>
         </Box>
       </Box>
-    </div>
+    </>
   );
 }
 

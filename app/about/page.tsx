@@ -3,11 +3,13 @@ import Image from "next/image";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import { Typography, Box } from "@mui/material";
+import BackgroundImg from "@/components/homepage-background";
 
 export default function Page() {
   return (
     <div>
       <NavBar />
+      <BackgroundImg />
       {/* Section to create the left area for the image */}
       <Box
         sx={{

@@ -21,7 +21,7 @@ export default function MenuImageList() {
                 loading="lazy"
                 className="w-3/4 h-auto object-cover mx-auto"
                 style={{
-                  maxWidth: "300px",
+                  maxWidth: "350px",
                   minWidth: "200px",
                   minHeight: "200px",
                   maxHeight: "200px",

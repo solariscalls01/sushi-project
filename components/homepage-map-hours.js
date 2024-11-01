@@ -5,10 +5,8 @@ import { Typography, Box, Link } from "@mui/material";
 export default function HomepageMap() {
   return (
     <div className="section" style={{
-      width: "80%",
+      width: "70%",
       margin: "auto",
-      display: "flex",
-      alignItems:"center",
     }}>
       {/* Section to create the left area for the image */}
       <Box
@@ -16,12 +14,11 @@ export default function HomepageMap() {
           display: "flex",
           flexDirection: {xs: "column", sm: "row"},
           alignItems: "center",
-          my: 4,
-          padding: 3,
+          padding: 2,
 
         }}
       >
-        <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <Box sx={{ width: "80%", display: "flex", justifyContent: "center" }}>
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -51,15 +48,15 @@ export default function HomepageMap() {
           }}
         >
           {/* Title */}
-          <Typography variant="h4" component="h2" sx={{ color: "white" }}>
+          <Typography variant="h4" component="h2" sx={{ color: "white", fontSize: {xs: "1.3rem", sm: "1.5rem"}, textAlign: {xs:"center", sm: "left"}, padding: {xs:"0.8rem", sm: "0rem"} }}>
             Business Hours
           </Typography>
 
           {/* Small Text Box */}
-          <Typography variant="body2" sx={{ color: "white" }}>
+          <Typography variant="body2" sx={{ color: "white", fontSize: {xs: "1rem", sm: "1.25rem"}, }}>
             Monday - Friday: 11:00am - 2pm; 5:00pm - 9:00pm
           </Typography>
-          <Typography variant="body2" sx={{ color: "white" }}>
+          <Typography variant="body2" sx={{ color: "white", fontSize: {xs: "1rem", sm: "1.25rem"}, }}>
             Saturday: 5:00pm - 9:00pm Sunday: CLOSED
           </Typography>
         </Box>

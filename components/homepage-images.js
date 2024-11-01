@@ -7,18 +7,22 @@ export default function MenuImageList() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
         {itemData.map((item) => (
           <div key={item.img} className="p-4">
-            <img
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              alt={item.title}
-              loading="lazy"
-              className="w-3/4 h-auto object-cover mx-auto"
-              style={{
-                maxWidth: "500px",
-                minWidth: "300px",
-                borderRadius: "10px",
-              }}
-            />
+            <a href={item.href} target="_blank" rel="noopner noreferrer">
+              <img
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.img}?w=248&fit=crop&auto=format`}
+                alt={item.title}
+                loading="lazy"
+                className="w-3/4 h-auto object-cover mx-auto"
+                style={{
+                  maxWidth: "300px",
+                  minWidth: "200px",
+                  minHeight: "300px",
+                  maxHeight: "300px",
+                  borderRadius: "10px",
+                }}
+              />
+            </a>
             <div className="mt-3 text-center">{item.title}</div>
           </div>
         ))}
@@ -31,15 +35,17 @@ const itemData = [
   {
     img: "/images/california-roll.png",
     title: "California Roll",
+    href: "/menu/sushi"
   },
   {
     img: "/images/sashimi-platter.png",
     title: "Sashimi Platter",
+    href: "/menu/sushi"
   },
   {
     img: "/images/rainbow-roll.png",
     title: "Rainbow Roll",
+    href: "/menu/sushi"
   },
 ];
 
-// NEED TO WORK ON RESPONIVE DESIGN FOR THIS

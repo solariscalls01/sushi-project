@@ -14,11 +14,7 @@ const links = [
   { name: "Appetizer", href: "/menu/appetizers", icon: LocalDiningRoundedIcon },
   { name: "Chirashi", href: "/menu/chirashi", icon: RiceBowlRoundedIcon },
   { name: "Noodles", href: "/menu/noodles", icon: RamenDiningIcon },
-  {
-    name: "Signature Combos",
-    href: "/menu/signature-combos",
-    icon: BentoRoundedIcon,
-  },
+  { name: "Signature Combos", href: "/menu/signature-combos", icon: BentoRoundedIcon },
   { name: "Sushi", href: "/menu/sushi", icon: SetMealRoundedIcon },
   { name: "Drinks", href: "/menu/drinks", icon: LocalDrinkRoundedIcon },
 ];
@@ -27,7 +23,10 @@ export default function NavLinksMenu() {
   const path = usePathname();
 
   return (
-    <>
+    <div style={{
+      width: "80%",
+      margin: "auto",
+    }}>
       {links.map((menu) => {
         const LinkIcon = menu.icon;
         // console.log(menu.name, menu.href)
@@ -47,6 +46,6 @@ export default function NavLinksMenu() {
           </Link>
         );
       })}
-    </>
+    </div>
   );
 }

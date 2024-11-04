@@ -9,6 +9,7 @@ export default function MenuImageList() {
         margin: "auto",
         display: "flex",
         alignItems: "center",
+        padding:"1.2rem"
       }}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
         {itemData.map((item) => (
@@ -53,5 +54,21 @@ const itemData = [
     title: "Rainbow Roll",
     href: "/menu/sushi"
   },
+  {
+    img: "/images/homepage-3.jpg",
+    title: "Sushi Combo",
+    href: "/menu/signature-combos"
+  },
+  {
+    img: "/images/chirashi/Deluxe-bowl.jpg",
+    title: "Deluxe Bowl",
+    href: "/menu/chirashi"
+  },
+  {
+    img: "/images/sashimi-mix.jpg",
+    title: "Sashimi Mix",
+    href: "/menu/sushi"
+  },
+
 ];
 

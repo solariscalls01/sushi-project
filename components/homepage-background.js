@@ -58,6 +58,7 @@ export default function BackgroundImg() {
           component="img"
           src={image}
           sx={{
+            mt: "2rem", 
             padding: "1.5rem",
             borderRadius: "2rem",
             // maxWidth: "1500px",

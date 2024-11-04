@@ -9,7 +9,7 @@ export default function Page() {
   const theme = createTheme();
   theme.spacing(24);
   return (
-    <div>
+    <div >
       <Header />
       <BackgroundImg />
       <NavLinksMenu></NavLinksMenu>

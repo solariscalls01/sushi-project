@@ -10,7 +10,10 @@ export default function Page() {
   const theme = createTheme();
   theme.spacing(24);
   return (
-    <div>
+    <div style={{
+      width: "80%",
+      margin: "auto",
+    }}>
       <Header />
       <BackgroundImg />
       <Box sx={{ display: "flex", width: "100%", gap: 2 }}>

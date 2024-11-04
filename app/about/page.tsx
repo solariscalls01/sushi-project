@@ -19,11 +19,12 @@ export default function Page() {
           flexDirection: { xs: "column", sm: "row" },
           alignItems: "center",
           gap: 4,
-          my: 6,
+          my: 10,
           mx: "auto",
-          maxWidth: "1200px",
+          width: {xs: "100%", sm: "100%", md: "70%", lg: "70%"},
           pl: 4,
-          pr: 4
+          pr: 4,
+
         }}
       >
         <Box sx={{ flex: "1 1 50%" }}>
@@ -32,17 +33,18 @@ export default function Page() {
             alt="Stephanie"
             width={350}
             height={200}
-            style={{ borderRadius: "10px" }}
+            style={{ borderRadius: "10px", maxWidth:"200px" }}
           />
         </Box>
 
-        {/* Section for creating right side with NavBar and paragraph */}
+        {/* Section for creating right side with image and paragraph */}
         <Box
           sx={{
             flex: "1 1 50%",
             display: "flex",
             flexDirection: "column",
             gap: 2,
+
           }}
         >
           {/* Title */}
@@ -70,7 +72,15 @@ export default function Page() {
       </Box>
 
       {/* Philosophy section */}
-      <Box sx={{ backgroundColor: "#b8011f", padding: "2px" }}>
+      <Box sx={{
+        backgroundColor: "#b8011f",
+        padding: "2px",
+        borderRadius: "10px",
+        width: {xs: "100%", sm: "100%", md: "70%"},
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "0 auto"
+      }}>
         <Box
           sx={{
             display: "flex",
@@ -132,11 +142,12 @@ export default function Page() {
         display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
-        sx={{ backgroundColor: "#fcfaee", padding: 4 }}
+        sx={{ backgroundColor: "#fcfaee", padding: "2.5rem", width:"70%", justifyContent:"center", alignItems:"center", margin:"0 auto"  }}
       >
         <Typography variant="h3" sx={{ marginBottom: 2 }}>
           Testimonials
         </Typography>
+
         {/* Section for yelp reviews dividing image on left and text on right  */}
         <Box
           display={"flex"}
@@ -160,7 +171,7 @@ export default function Page() {
           </Box>
         </Box>
       </Box>
-    <Footer />
+      <Footer />
     </div>
   );
 }

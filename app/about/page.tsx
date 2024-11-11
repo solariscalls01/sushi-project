@@ -6,71 +6,89 @@ import { Typography, Box } from "@mui/material";
 
 export default function Page() {
   return (
-    <div>
+    <div style={{
+      width: "70%",
+      margin: "auto",
+    }}>
       <NavBar />
-      {/* Section to create the left area for the image */}
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: {xs: "column", sm: "row"},
-          alignItems: "center",
-          gap: 4,
-          my: 6,
-          mx: "auto",
-          maxWidth: "1200px",
-          pl: 4,
-          pr: 4
-        }}
-      >
-        <Box sx={{ flex: "1 1 50%" }}>
-          <Image
-            src="/images/our-story.jpg"
-            alt="Stephanie"
-            width={350}
-            height={200}
-            style={{ borderRadius: "10px" }}
-          />
-        </Box>
 
-        {/* Section for creating right side with NavBar and paragraph */}
+      <Box sx={{
+        padding: "1rem",
+        borderRadius: "10px",
+        width: { xs: "100%", sm: "100%", md: "90%" },
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "0 auto"
+      }}>
         <Box
           sx={{
-            flex: "1 1 50%",
             display: "flex",
-            flexDirection: "column",
+            flexDirection: { xs: "column", sm: "row" },
+            alignItems: "center",
             gap: 2,
+            my: 6,
+            mx: "auto",
+            maxWidth: "1200px",
+            pl: 4,
+            pr: 4
           }}
         >
-          {/* Title */}
-          <Typography
-            variant="h4"
-            component="h2"
-            sx={{ fontFamily: "Lobster" }}
+          <Box sx={{ flex: "1 1 50%" }}>
+            <Image
+              src="/images/our-story.jpg"
+              alt="Stephanie"
+              width={350}
+              height={200}
+              style={{ borderRadius: "10px", minWidth:"200px" }}
+            />
+          </Box>
+          <Box
+            sx={{
+              flex: "1 1 50%",
+              display: "flex",
+              flexDirection: "column",
+              gap: 2,
+            }}
           >
-            Our Story
-          </Typography>
+            {/* Title */}
+            <Typography
+              variant="h4"
+              component="h2"
+              sx={{ fontFamily: "Lobster", color: "black" }}
+            >
+              Our Story
+            </Typography>
 
-          {/* Small Text Box */}
-          <Typography
-            variant="body1"
-            sx={{ width: "100%", fontFamily: "Noto", }}
-          >
-            Our journey began as a simple dream fueled by a shared love for
-            sushi and the desire to bring authentic Japanese flavors to our
-            community. As more customers discovered us and word of mouth spread,
-            we realized that we were not just serving sushi—we were building a
-            place where people could gather, share stories, and savor something
-            truly special.
-          </Typography>
+            {/* Small Text Box */}
+            <Typography
+              variant="body1"
+              sx={{ width: "100%", fontFamily: "Noto", color: "black" }}
+            >
+              Our journey began as a simple dream fueled by a shared love for
+              sushi and the desire to bring authentic Japanese flavors to our
+              community. As more customers discovered us and word of mouth spread,
+              we realized that we were not just serving sushi—we were building a
+              place where people could gather, share stories, and savor something
+              truly special.
+            </Typography>
+          </Box>
         </Box>
       </Box>
 
       {/* Philosophy section */}
-      <Box sx={{ backgroundColor: "#b8011f", padding: "2px" }}>
+      <Box sx={{
+        backgroundColor: "#b8011f",
+        padding: "2px",
+        borderRadius: "10px",
+        width: { xs: "100%", sm: "100%", md: "70%" },
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "0 auto"
+      }}>
         <Box
           sx={{
             display: "flex",
-            flexDirection: {xs: "column", sm: "row"},
+            flexDirection: { xs: "column", sm: "row" },
             alignItems: "center",
             gap: 4,
             my: 6,
@@ -118,8 +136,6 @@ export default function Page() {
               style={{ borderRadius: "10px" }}
             />
           </Box>
-
-          {/* Section for creating right side with NavBar and paragraph */}
         </Box>
       </Box>
 
@@ -128,11 +144,12 @@ export default function Page() {
         display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
-        sx={{ backgroundColor: "#fcfaee", padding: 4 }}
+        sx={{ backgroundColor: "#fcfaee", padding: "2.5rem", width: "70%", justifyContent: "center", alignItems: "center", margin: "0 auto" }}
       >
         <Typography variant="h3" sx={{ marginBottom: 2 }}>
           Testimonials
         </Typography>
+
         {/* Section for yelp reviews dividing image on left and text on right  */}
         <Box
           display={"flex"}
@@ -156,7 +173,6 @@ export default function Page() {
           </Box>
         </Box>
       </Box>
-
       <Footer />
     </div>
   );

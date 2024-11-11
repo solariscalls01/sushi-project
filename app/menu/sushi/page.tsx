@@ -3,19 +3,18 @@ import Header from "../../../components/NavBar";
 import Footer from "../../../components/Footer";
 import { Box, createTheme, Typography } from "@mui/material";
 import NavLinksMenu from "../dashboard/nav-links";
+import BackgroundImg from "@/components/homepage-background";
+
 export default function Page() {
   const theme = createTheme();
   theme.spacing(24);
   return (
-    <div>
+    <div style={{
+      width: "80%",
+      margin: "auto",
+    }}>
       <Header />
-      <Typography
-        variant="h2"
-        sx={{ justifyContent: "center", textAlign: "center", mt: 3, mb: 3 }}
-      >
-        {" "}
-        Menu
-      </Typography>
+      <BackgroundImg />
       <Box sx={{ display: "flex", width: "100%", gap: 2 }}>
         {/* Left Menu */}
         <Box sx={{ border: "1px solid black" }}>
@@ -24,9 +23,6 @@ export default function Page() {
 
         {/* Right Side Box */}
         <Box sx={{ flex: 1, border: "1px solid black", padding: 2 }}>
-          <Typography variant="h3" sx={{ textAlign: "center" }}>
-            Sushi
-          </Typography>
 
           {/* Additional Items */}
           <Box sx={{ border: "1px solid black", marginTop: 2, padding: 1 }}>

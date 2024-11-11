@@ -5,10 +5,9 @@ import { Typography, Box, Link } from "@mui/material";
 export default function HomepageMap() {
   return (
     <div className="section" style={{
-      width: "80%",
+      width: "70%",
       margin: "auto",
-      display: "flex",
-      alignItems:"center",
+      borderRadius: "10px"
     }}>
       {/* Section to create the left area for the image */}
       <Box
@@ -16,12 +15,10 @@ export default function HomepageMap() {
           display: "flex",
           flexDirection: {xs: "column", sm: "row"},
           alignItems: "center",
-          my: 4,
-          padding: 3,
-
+          padding: 2,
         }}
       >
-        <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <Box sx={{ width: "80%", display: "flex", justifyContent: "center" }}>
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -29,13 +26,15 @@ export default function HomepageMap() {
           >
             <Image
               src="/images/daimonji-map.png"
-              alt="Alex with his family"
-              width={350}
+              alt="Location of restaurant"
+              width={250}
               height={200}
               style={{
                 cursor: "pointer",
                 borderRadius: "10px",
-                minWidth: "150px",
+                maxWidth: "100%",
+                height:"auto"
+                
               }}
             />
           </Link>
@@ -47,19 +46,19 @@ export default function HomepageMap() {
             flex: "1 1 50%",
             display: "flex",
             flexDirection: "column",
-            gap: 2,
+            gap: 3,
           }}
         >
           {/* Title */}
-          <Typography variant="h4" component="h2" sx={{ color: "white" }}>
+          <Typography variant="h4" component="h2" sx={{ color: "white", fontSize: {xs: "1.1rem", sm: "1.3rem"}, textAlign: {xs:"center", sm: "left"}, padding: {xs:"0.8rem", sm: "0rem"} }}>
             Business Hours
           </Typography>
 
           {/* Small Text Box */}
-          <Typography variant="body2" sx={{ color: "white" }}>
+          <Typography variant="body2" sx={{ color: "white", fontSize: {xs: "0.9rem", sm: "1.0rem"}, }}>
             Monday - Friday: 11:00am - 2pm; 5:00pm - 9:00pm
           </Typography>
-          <Typography variant="body2" sx={{ color: "white" }}>
+          <Typography variant="body2" sx={{ color: "white", fontSize: {xs: "0.9rem", sm: "1.0rem"}, }}>
             Saturday: 5:00pm - 9:00pm Sunday: CLOSED
           </Typography>
         </Box>

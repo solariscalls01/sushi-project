@@ -24,7 +24,7 @@ export default function MultiActionAreaCard() {
             fontWeight={200}
             textAlign={"center"}
           >
-            $6.0
+            $6
           </Typography>
           <Typography
             gutterBottom

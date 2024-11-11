@@ -9,7 +9,7 @@ export default function MenuImageList() {
         margin: "auto",
         display: "flex",
         alignItems: "center",
-        padding:"1.2rem"
+        padding:"1.2rem",
       }}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
         {itemData.map((item) => (
@@ -26,7 +26,8 @@ export default function MenuImageList() {
                   minWidth: "200px",
                   minHeight: "200px",
                   maxHeight: "200px",
-                  borderRadius: "10px",
+                  borderRadius: "1.5rem",
+                  padding:"0.8rem"
                 }}
               />
             </a>

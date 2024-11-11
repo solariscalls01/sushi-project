@@ -22,6 +22,7 @@ import Slide from '@mui/material/Slide';
 
 const drawerWidth = 240; // Adjust this width as necessary
 const navItems = [
+  {name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Menu", href: "/menu" },
   { name: "To Go", href: "/" },
@@ -103,7 +104,7 @@ function DrawerAppBar(props) {
                 aria-label="open drawer"
                 edge="end"
                 onClick={handleDrawerToggle}
-                sx={{ mr: 2, display: { xs: "block", sm: "block", md: "none" } }}
+                sx={{ mr: 2, display: { xs: "block", sm: "block", md: "none", lg: "none" } }}
               >
                 <MenuIcon />
               </IconButton>
@@ -124,7 +125,7 @@ function DrawerAppBar(props) {
                 keepMounted: true, // Better open performance on mobile.
               }}
               sx={{
-                display: { xs: "block", sm: "none", md: "none" },
+                display: { xs: "block", sm: "block", md: "none" },
                 "& .MuiDrawer-paper": {
                   boxSizing: "border-box",
                   width: drawerWidth,

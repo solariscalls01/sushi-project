@@ -22,7 +22,7 @@ import Slide from '@mui/material/Slide';
 
 const drawerWidth = 240; // Adjust this width as necessary
 const navItems = [
-  {name: "Home", href: "/" },
+  { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Menu", href: "/menu" },
   { name: "To Go", href: "/" },

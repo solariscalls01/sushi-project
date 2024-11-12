@@ -14,6 +14,9 @@ export default function BackgroundImg() {
     case "/":
       image = "/images/homepage-1.jpg";
       break;
+    case "/togo":
+      image = "/images/togo-image.jpg";
+      break;
     case "/about":
       image = "/images/uni.jpg";
       break;

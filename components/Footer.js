@@ -6,10 +6,11 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 import Typography from "@mui/material/Typography";
-import Link from "next/link";
+import Link from '@mui/material/Link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYelp } from "@fortawesome/free-brands-svg-icons";
 import DaimonjiLogo from './Daimonji-logo'
+import "../app/globals.css"
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
@@ -18,9 +19,9 @@ export default function SimpleBottomNavigation() {
     <footer style={{
       width: "70%",
       margin: "auto",
-      borderRadius:"10px"
+      borderRadius: "10px"
     }}>
-      <Box sx={{ bgcolor: "#B8001F", color: "#fff", p: 2, borderRadius:"10px" }}>
+      <Box sx={{ bgcolor: "#B8001F", color: "#fff", p: 2, borderRadius: "10px" }}>
         {/* Contact Information - Top Left */}
         <Box sx={{ mb: 2 }}>
           <Typography variant="h6" gutterBottom sx={{ fontSize: { xs: '0.75rem', sm: "1rem" } }}>
@@ -28,7 +29,7 @@ export default function SimpleBottomNavigation() {
           </Typography>
           <Typography variant="body2" sx={{ fontSize: { xs: '0.75rem', sm: "1rem" } }}>
             <Link href="tel:+1(206)762-7820" underline="hover" color="#fff">
-              {"tel:+1(206)762-7820"}
+              {"(206)762-7820"}
             </Link>
           </Typography>
           {/*
@@ -86,8 +87,8 @@ export default function SimpleBottomNavigation() {
               target="_blank"
               rel="noopener noreferrer"
               icon={
-                <FontAwesomeIcon
-                  style={{ fontSize: { xs: "1rem", sm: "2.25rem" }, color: "#fff" }}
+                <FontAwesomeIcon className="icon-hover"
+                  style={{ fontSize: { xs: "1rem", sm: "2.25rem"}, color: "#fff" }}
                   icon={faYelp}
                 />
               }

@@ -39,7 +39,7 @@ export default function Page() {
               alt="Stephanie"
               width={350}
               height={200}
-              style={{ borderRadius: "10px", minWidth:"200px" }}
+              style={{ borderRadius: "10px", minWidth: "200px" }}
             />
           </Box>
           <Box

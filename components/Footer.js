@@ -18,7 +18,7 @@ export default function SimpleBottomNavigation() {
   return (
     <footer style={{
       width: "70%",
-      margin: "auto",
+      margin: "3rem auto",
       borderRadius: "10px"
     }}>
       <Box sx={{ bgcolor: "#B8001F", color: "#fff", p: 2, borderRadius: "10px" }}>

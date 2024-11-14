@@ -5,6 +5,14 @@ import { Box, createTheme, Typography } from "@mui/material";
 import NavLinksMenu from "../dashboard/nav-links";
 import BackgroundImg from "@/components/homepage-background";
 import CardFood from "../../../components/CardFood"
+import { db } from "@vercel/postgres";
+
+const client = await db.connect();
+const getNoodlesInfo = await client.sql`select name, price, description, image_url from noodles`
+
+getNoodlesInfo.rows.map(item => {
+  console.log(`name: ${item.name}, price: ${item.price}, image: ${item.image_url}`)
+})
 
 export default function Page() {
   const theme = createTheme();
@@ -12,7 +20,7 @@ export default function Page() {
   return (
     <div style={{
       width: "80%",
-      margin: "auto",
+      margin: "5rem auto",
     }}>
       <Header />
       <BackgroundImg />
@@ -24,11 +32,7 @@ export default function Page() {
 
         {/* Right Side Content */}
         <Box sx={{ flex: 1, border: "1px solid black", padding: 2 }}>
-
           <Box sx={{ border: "1px solid black", marginTop: 2, padding: 1 }}>
-            <Typography variant="body1" sx={{ textAlign: "center" }}>
-              Another Item
-            </Typography>
             <CardFood></CardFood>
           </Box>
         </Box>

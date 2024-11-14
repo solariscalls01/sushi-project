@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Edu+AU+VIC+WA+NT+Pre&family=Lusitana:wght@400;700&family=Monsieur+La+Doulaise&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
 
 :root {
   --background: #ffffff;
@@ -20,7 +20,7 @@
 body {
   color: var(--foreground);
   background-color: var(--background);
-  font-family: "Noto", "Lobster", "Roboto Flex", Arial, Helvetica, sans-serif;
+  font-family: "Nunito", "Noto", "Lobster", "Roboto Flex", Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {

@@ -4,6 +4,20 @@ import Footer from "../../../components/Footer";
 import { Box, createTheme, Typography } from "@mui/material";
 import NavLinksMenu from "../dashboard/nav-links";
 import BackgroundImg from "@/components/homepage-background";
+import { db } from "@vercel/postgres";
+
+const client = await db.connect()
+const getDrinksInfo = await client.sql`select name, price, image_url from drinks`
+const getAlcoholInfo = await client.sql`select name, price_small, price_large, description, image_url from alcohol `
+
+getDrinksInfo.rows.map(item => {
+  console.log(`name: ${item.name}, price: ${item.price}, image: ${item.image_url}`)
+})
+
+getAlcoholInfo.rows.map(item => {
+  console.log(`name: ${item.name}, price_small: ${item.price_small}, price_large: ${item.price_large}, description: ${item.description} image: ${item.image_url}`)
+})
+
 
 export default function Page() {
   const theme = createTheme();

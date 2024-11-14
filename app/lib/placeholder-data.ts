@@ -211,7 +211,7 @@ const drinks = [
   {
     name: "Lemonade / Apple Juice",
     price: 3,
-    image_url: "null",
+    image_url: "https://github.com/solariscalls01/sushi-project/blob/master/public/images/drink/lemonade-apple.jpg",
   },
 ];
 

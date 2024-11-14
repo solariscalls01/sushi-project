@@ -14,7 +14,6 @@ getAppetizerInfo.rows.map(item => {
   console.log(`Name: ${item.name}, Price: ${item.price}, Descrption: ${item.description}, Image_URL: ${item.image_url}`)
 })
 
-
 export default function Page() {
   const theme = createTheme();
   theme.spacing(24);

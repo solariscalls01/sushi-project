@@ -26,7 +26,7 @@ export default function Page() {
             flexDirection: { xs: "column", sm: "row" },
             alignItems: "center",
             gap: 2,
-            my: 6,
+            my: 10,
             mx: "auto",
             maxWidth: "1200px",
             pl: 4,

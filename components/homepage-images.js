@@ -41,17 +41,17 @@ export default function MenuImageList() {
 
 const itemData = [
   {
-    img: "/images/california-roll.png",
+    img: "/images/california-roll.jpg",
     title: "California Roll",
     href: "/menu/sushi"
   },
   {
-    img: "/images/sashimi-platter.png",
+    img: "/images/sashimi-platter.jpg",
     title: "Sashimi Platter",
     href: "/menu/sushi"
   },
   {
-    img: "/images/rainbow-roll.png",
+    img: "/images/rainbow-roll.jpg",
     title: "Rainbow Roll",
     href: "/menu/sushi"
   },

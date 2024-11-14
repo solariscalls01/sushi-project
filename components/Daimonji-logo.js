@@ -11,8 +11,8 @@ export default function DaimonjiLogo() {
                     component="img"
                     sx={{
                         height: "200px", width: "200px",
-                        maxHeight: { xs: "70px", sm: "80px" },
-                        maxWidth: { xs: "70px", sm: "80px" },
+                        maxHeight: { xs: "50px", sm: "125px" },
+                        maxWidth: { xs: "50px", sm: "125px" },
                         textAlign: "center",
                         justifyContent: "center"
                     }} alt="Daimonji logo" src="/images/logo.png" />

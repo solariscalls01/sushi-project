@@ -14,7 +14,7 @@ export default function MenuImageList() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
         {itemData.map((item) => (
           <div key={item.img} className="p-4">
-            <a href={item.href} rel="noopner noreferrer">
+            <a href={item.href}>
               <img
                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 src={`${item.img}?w=248&fit=crop&auto=format`}

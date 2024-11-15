@@ -1,17 +1,17 @@
 import * as React from "react";
 import Header from "../../../components/NavBar";
 import Footer from "../../../components/Footer";
-import { Box, createTheme } from "@mui/material";
+import { Box, createTheme, Typography } from "@mui/material";
 import NavLinksMenu from "../dashboard/nav-links";
 import BackgroundImg from "@/components/homepage-background";
-import CardFood from "../../../components/CardFood"
 import { db } from "@vercel/postgres";
 
+// Get name, price, description, from db
 const client = await db.connect();
-const getNoodlesInfo = await client.sql`select name, price, description, image_url from noodles`
+const getBentoInfo = await client.sql`select name, price, description,image_url from appetizers`
 
-getNoodlesInfo.rows.map(item => {
-  console.log(`name: ${item.name}, price: ${item.price}, image: ${item.image_url}`)
+getBentoInfo.rows.map(item => {
+  console.log(`Name: ${item.name}, Price: ${item.price}, Descrption: ${item.description}, Image_URL: ${item.image_url}`)
 })
 
 export default function Page() {
@@ -20,20 +20,24 @@ export default function Page() {
   return (
     <div style={{
       width: "80%",
-      margin: "5rem auto",
+      margin: "auto",
     }}>
       <Header />
       <BackgroundImg />
       <Box sx={{ display: "flex", width: "100%", gap: 2 }}>
-        {/* Left Menu */}
+        {/* Left Menu (Fixed Width) */}
         <Box sx={{ border: "1px solid black" }}>
           <NavLinksMenu />
         </Box>
 
-        {/* Right Side Content */}
+        {/* Right Side Content (Takes Remaining Space) */}
         <Box sx={{ flex: 1, border: "1px solid black", padding: 2 }}>
+
+          {/* Additional Items */}
           <Box sx={{ border: "1px solid black", marginTop: 2, padding: 1 }}>
-            <CardFood></CardFood>
+            <Typography variant="body1" sx={{ textAlign: "center" }}>
+              Another Item
+            </Typography>
           </Box>
         </Box>
       </Box>

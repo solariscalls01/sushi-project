@@ -35,6 +35,10 @@ export default function BackgroundImg() {
     case "/menu/drinks":
       image = "/images/drink/lemonade-apple.jpg";
       break;
+    case "/menu/bento":
+      image = "/images/bento/o.jpg";
+      break;
+      
     case "/menu/noodles":
       image = "/images/tonkatsu-ramen.png";
       break;
@@ -54,7 +58,8 @@ export default function BackgroundImg() {
       {
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        marginTop:"5rem"
       }
     }>
         <CardMedia

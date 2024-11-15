@@ -62,7 +62,7 @@ export default function Page() {
             {/* Small Text Box */}
             <Typography
               variant="body1"
-              sx={{ width: "100%", fontFamily: "Noto", color: "black" }}
+              sx={{ width: "100%", fontFamily: "Barriecito", color: "black" }}
             >
               Our journey began as a simple dream fueled by a shared love for
               sushi and the desire to bring authentic Japanese flavors to our

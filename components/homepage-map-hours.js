@@ -25,7 +25,7 @@ export default function HomepageMap() {
             href="https://www.bing.com/search?pglt=673&q=Adress%3A+5963+Corson+Ave+S+Ste+194%2C+Seattle%2C+WA+98108&cvid=14061f21201e4352bb74549038244a15&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEHOTUwajBqMagCALACAA&FORM=ANNTA1&PC=W099"
           >
             <Image
-              src="/images/daimonji-map.png"
+              src="/images/daimonji-map.jpg"
               alt="Location of restaurant"
               width={250}
               height={200}

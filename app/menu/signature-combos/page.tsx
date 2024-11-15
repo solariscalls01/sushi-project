@@ -4,6 +4,14 @@ import Footer from "../../../components/Footer";
 import { Box, createTheme, Typography } from "@mui/material";
 import NavLinksMenu from "../dashboard/nav-links";
 import BackgroundImg from "@/components/homepage-background";
+import { db } from "@vercel/postgres";
+
+const client = await db.connect();
+const getCombosInfo = await client.sql`select name, price, description, image_url from signatureCombo `
+
+getCombosInfo.rows.map(item => {
+  console.log(`name: ${item.name}, price: ${item.price}, description: ${item.description} image: ${item.image_url}`)
+})
 
 export default function Page() {
   const theme = createTheme();

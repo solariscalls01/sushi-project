@@ -9,12 +9,14 @@ import BentoRoundedIcon from "@mui/icons-material/BentoRounded";
 import RiceBowlRoundedIcon from "@mui/icons-material/RiceBowlRounded";
 import LocalDiningRoundedIcon from "@mui/icons-material/LocalDiningRounded";
 import SetMealRoundedIcon from "@mui/icons-material/SetMealRounded";
+import SetMealIcon from '@mui/icons-material/SetMeal';
 
 const links = [
   { name: "Appetizer", href: "/menu/appetizers", icon: LocalDiningRoundedIcon },
+  { name: "Bento Box", href: "/menu/bento", icon: BentoRoundedIcon },
   { name: "Chirashi", href: "/menu/chirashi", icon: RiceBowlRoundedIcon },
   { name: "Noodles", href: "/menu/noodles", icon: RamenDiningIcon },
-  { name: "Signature Combos", href: "/menu/signature-combos", icon: BentoRoundedIcon },
+  { name: "Signature Combos", href: "/menu/signature-combos", icon: SetMealIcon },
   { name: "Sushi", href: "/menu/sushi", icon: SetMealRoundedIcon },
   { name: "Drinks", href: "/menu/drinks", icon: LocalDrinkRoundedIcon },
 ];

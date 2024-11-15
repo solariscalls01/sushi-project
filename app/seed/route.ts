@@ -125,14 +125,15 @@ async function seedChirashi() {
   id SERIAL PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
   price NUMERIC(5,2) NOT NULL,
+  description VARCHAR(255),
   image_url VARCHAR(255)
   )`;
 
   const insertChirashi = await Promise.all(
     chirashi.map(
       (c) => client.sql`
-    INSERT INTO chirashi (name, price, image_url)
-    VALUES (${c.name}, ${c.price}, ${c.image_url})
+    INSERT INTO chirashi (name, price, description, image_url)
+    VALUES (${c.name}, ${c.price}, ${c.description}, ${c.image_url})
     ON CONFLICT DO NOTHING;`,
     ),
   );

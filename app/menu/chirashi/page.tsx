@@ -23,6 +23,7 @@ export default function Page() {
     }}>
       <Header />
       <BackgroundImg />
+      <Typography variant="h3" sx={{ textAlign: "center", justifyContent: "center", pb: "2rem" }}>Chirashi Bowls</Typography>
       <Box sx={{ display: "flex", width: "100%", gap: 2 }}>
         {/* Left Menu (Fixed Width) */}
         <Box sx={{ border: "1px solid black" }}>

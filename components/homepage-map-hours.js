@@ -26,7 +26,7 @@ export default function HomepageMap() {
           >
             <Image
               src="/images/daimonji-map.jpg"
-              alt="Location of restaurant"
+              alt="Map of location of the restaurant"
               width={250}
               height={200}
               style={{

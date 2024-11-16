@@ -1,7 +1,7 @@
 import * as React from "react";
 import Header from "../../../components/NavBar";
 import Footer from "../../../components/Footer";
-import { Box, createTheme } from "@mui/material";
+import { Box, createTheme, Typography } from "@mui/material";
 import NavLinksMenu from "../dashboard/nav-links";
 import BackgroundImg from "@/components/homepage-background";
 import CardFood from "../../../components/CardFood"
@@ -20,10 +20,11 @@ export default function Page() {
   return (
     <div style={{
       width: "80%",
-      margin: "5rem auto",
+      margin: "auto",
     }}>
       <Header />
       <BackgroundImg />
+      <Typography variant="h3" sx={{ textAlign: "center", justifyContent: "center", pb: "2rem" }}>Noodles</Typography>
       <Box sx={{ display: "flex", width: "100%", gap: 2 }}>
         {/* Left Menu */}
         <Box sx={{ border: "1px solid black" }}>

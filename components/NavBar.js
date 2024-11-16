@@ -20,7 +20,7 @@ import styles from "../app/ui/global.css";
 import DaimonjiLogo from "./Daimonji-logo";
 import Slide from '@mui/material/Slide';
 
-const drawerWidth = 240; // Adjust this width as necessary
+const drawerWidth = 240;
 const navItems = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },

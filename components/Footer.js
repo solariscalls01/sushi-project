@@ -48,21 +48,9 @@ export default function SimpleBottomNavigation() {
               {"5963 Corson Ave S, Seattle, WA 98108"}
             </Link>
           </Typography>
-          {/* <Typography variant="body1" sx={{ fontSize: { xs: '0.75rem', sm: "1rem" } }}>
-            <strong>Business Hours</strong>:
-          </Typography>
-          <Typography variant="body2" sx={{ fontSize: { xs: '0.75rem', sm: "1rem" } }}>
-            Monday - Friday: 11:00am - 2pm; 5:00pm - 9:00pm
-          </Typography>
-          <Typography variant="body2" sx={{ fontSize: { xs: '0.75rem', sm: "1rem" } }}>
-            Saturday: 5:00pm - 9:00pm
-          </Typography>
-          <Typography variant="body2" sx={{ fontSize: { xs: '0.75rem', sm: "1rem" } }}>
-            Sunday: <strong>CLOSED</strong>
-          </Typography> */}
         </Box>
 
-        {/* Social Media Icons - Centered Below Contact Info */}
+        {/* Social Media Icons */}
         <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
           <BottomNavigation
             showLabels

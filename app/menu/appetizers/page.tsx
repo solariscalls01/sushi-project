@@ -26,20 +26,17 @@ export default function Page() {
     }}>
       <Header />
       <BackgroundImg />
+      <Typography variant="h3" sx={{ textAlign: "center", justifyContent: "center", pb: "2rem" }}>Appetizers</Typography>
       <Box sx={{ display: "flex", width: "100%", gap: 2 }}>
-        {/* Left Menu (Fixed Width) */}
         <Box sx={{ border: "1px solid black" }}>
           <NavLinksMenu />
         </Box>
 
-        {/* Right Side Content (Takes Remaining Space) */}
+        {/* Right Side Content */}
         <Box sx={{ flex: 1, border: "1px solid black", padding: 2 }}>
 
           {/* Additional Items */}
           <Box sx={{ border: "1px solid black", marginTop: 2, padding: 1 }}>
-            <Typography variant="body1" sx={{ textAlign: "center" }}>
-              Another Item
-            </Typography>
             <Typography variant="body1" sx={{ textAlign: "center" }}>
               Another Item
             </Typography>

@@ -63,6 +63,7 @@ export default function SimpleBottomNavigation() {
             <BottomNavigationAction
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Opens Google Map reviews page"
               icon={<GoogleIcon sx={{ fontSize: { xs: "1rem", sm: "2.25rem" }, color: "#fff" }} />}
               href="https://www.google.com/maps/place/Daimonji+Sushi+%26+Grill/@47.5476367,-122.3251621,16z/data=!3m1!5s0x549041c00151388b:0x35a6651a72e32613!4m8!3m7!1s0x549041eb31ada4cf:0x4dd9351c2b0914e5!8m2!3d47.5476331!4d-122.3225818!9m1!1b1!16s%2Fg%2F1tg5zb94?entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D"
               sx={{
@@ -74,6 +75,7 @@ export default function SimpleBottomNavigation() {
             <BottomNavigationAction
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Opens Yelp reviews page"
               icon={
                 <FontAwesomeIcon className="icon-hover"
                   style={{ fontSize: { xs: "1rem", sm: "2.25rem"}, color: "#fff" }}
@@ -85,6 +87,7 @@ export default function SimpleBottomNavigation() {
             <BottomNavigationAction
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Opens Daimonji Facebook page"
               icon={<FacebookIcon sx={{ fontSize: { xs: "1rem", sm: "2.25rem" }, color: "#fff" }} />}
               href="https://www.facebook.com/Daimonjisushi/"
             />

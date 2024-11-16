@@ -17,6 +17,21 @@
   }
 }
 
+@media print {
+
+  /* Use print-color-adjust instead of color-adjust */
+  body {
+    print-color-adjust: exact;
+    /* Ensures colors are printed as-is without adjustments */
+  }
+}
+
+html,
+body {
+  -webkit-text-size-adjust: 100%;
+  /* For Safari and older WebKit-based browsers */
+}
+
 body {
   color: var(--foreground);
   background-color: var(--background);

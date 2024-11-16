@@ -7,7 +7,7 @@ import { Typography, Box } from "@mui/material";
 export default function Page() {
   return (
     <div style={{
-      width: "70%",
+      width: "90%",
       margin: "auto",
     }}>
       <NavBar />
@@ -144,7 +144,14 @@ export default function Page() {
         display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
-        sx={{ backgroundColor: "#fcfaee", padding: "2.5rem", width: "70%", justifyContent: "center", alignItems: "center", margin: "0 auto" }}
+        sx={{
+          padding: "1rem",
+          borderRadius: "10px",
+          width: { xs: "100%", sm: "100%", md: "90%" },
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "0 auto"
+        }}
       >
         <Typography variant="h3" sx={{ marginBottom: 2 }}>
           Testimonials

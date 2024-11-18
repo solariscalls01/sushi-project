@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Noto_Sans } from "next/font/google";
+import { Nunito } from "next/font/google";
 
-const notoSans = Noto_Sans({
-  subsets: ["latin"],
-  weight: ["600"],
-});
+
+// const notoSans = Noto_Sans({
+//   subsets: ["latin"],
+//   weight: ["600"],
+// });
+
+const nunito = Nunito({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Daimonji Sushi",
@@ -19,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={notoSans.className}>{children}</body>
+      <body className={nunito.className}>{children}</body>
     </html>
   );
 }

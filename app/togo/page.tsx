@@ -12,7 +12,7 @@ export default function Page() {
     <div>
       <NavBar />
       <BackgroundImg />
-      <Typography variant="body1" sx={{ textAlign: "center" }}>
+      <Typography variant="body1" sx={{ textAlign: "center", fontFamily: "Barriecito", color: "black", fontSize:"1.1rem" }}>
         Follow us on <span><Link href="https://www.facebook.com/Daimonjisushi/" color="#3594e8" underline="hover" >
             {"Facebook"}
           </Link></span> to take a look at some of the specials we have for the week!
@@ -41,7 +41,7 @@ export default function Page() {
         textAlign: "center",
         margin: "0 auto"
       }}>
-        <Typography variant="h6" >
+        <Typography variant="h6" sx={{fontFamily: "Barriecito", color: "black", fontSize:"1.4rem"}} >
           Each sushi order is freshly prepared and ready for pickup when you arrive.
           Takeout is available from 5:00 PM to 9:00 PM, with orders placed at least 30 minutes in advance.
           Guests can order by calling: <Link href="tel:+1(206)762-7820" variant="h6" color="#fb0002" underline="hover" >

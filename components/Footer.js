@@ -25,13 +25,13 @@ export default function SimpleBottomNavigation() {
         {/* Contact Information - Top Left */}
         <Box sx={{ mb: 2 }}>
           <Typography variant="h6" gutterBottom sx={{ fontSize: { xs: '0.75rem', sm: "1rem" } }}>
-            Contact Us:
-          </Typography>
-          <Typography variant="body2" sx={{ fontSize: { xs: '0.75rem', sm: "1rem" } }}>
+            Contact Us: &nbsp;
             <Link href="tel:+1(206)762-7820" underline="hover" color="#fff">
               {"(206)762-7820"}
             </Link>
           </Typography>
+          
+          
           {/*
                     When you use target="_blank" with Links, it is recommended to always set rel="noopener" or rel="noreferrer" when linking to third party content.
                     rel="noopener" prevents the new page from being able to access the window.opener property and ensures it runs in a separate process. Without this, the target page can potentially redirect your page to a malicious URL.
@@ -78,7 +78,7 @@ export default function SimpleBottomNavigation() {
               aria-label="Opens Yelp reviews page"
               icon={
                 <FontAwesomeIcon className="icon-hover"
-                  style={{ fontSize: { xs: "1rem", sm: "2.25rem"}, color: "#fff" }}
+                  style={{ fontSize: { xs: "1rem", sm: "1.5rem"}, color: "#fff" }}
                   icon={faYelp}
                 />
               }

@@ -8,11 +8,11 @@ module.exports = {
             {
                 source: '/(.*)', // Matches all routes
                 headers: [
-                    {
-                        key: 'Content-Security-Policy',
-                        value:
-                            "default-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' *.somewhere.com;  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self';",
-                    },
+                    // {
+                    //     key: 'Content-Security-Policy',
+                    //     value:
+                    //         "default-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' *.somewhere.com;  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self';",
+                    // },
                     {
                         key: 'X-Frame-Options',
                         value: 'DENY',

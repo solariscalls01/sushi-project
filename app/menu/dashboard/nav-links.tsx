@@ -25,9 +25,11 @@ export default function NavLinksMenu() {
   const path = usePathname();
 
   return (
-    <div style={{
+    <div className={"flex flex-wrap gap-2 p-4 sm:gap-4 sm:justify-center nav-links"} style={{
       width: "80%",
       margin: "auto",
+      textAlign: "center",
+      justifyContent: "center"
     }}>
       {links.map((menu) => {
         const LinkIcon = menu.icon;
@@ -37,14 +39,14 @@ export default function NavLinksMenu() {
             key={menu.name}
             href={menu.href}
             className={clsx(
-              "flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3",
+              "flex h-12 w-full items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-xs font-medium hover:bg-sky-100 hover:text-blue-600 sm:flex-none sm:w-auto sm:justify-start sm:text-sm",
               {
                 "bg-sky-100 text-blue-600": path == menu.href,
               },
             )}
           >
-            <LinkIcon />
-            <p className="hidden md:block">{menu.name}</p>
+            <LinkIcon className="text-lg sm:textbase" />
+            <p className="sm:block">{menu.name}</p>
           </Link>
         );
       })}

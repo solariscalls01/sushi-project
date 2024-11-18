@@ -25,11 +25,8 @@ export default function Page() {
       <Header />
       <BackgroundImg />
       <Typography variant="h3" sx={{ textAlign: "center", justifyContent: "center", pb: "2rem" }}>Noodles</Typography>
+      <NavLinksMenu />
       <Box sx={{ display: "flex", width: "100%", gap: 2 }}>
-        {/* Left Menu */}
-        <Box sx={{ border: "1px solid black" }}>
-          <NavLinksMenu />
-        </Box>
 
         {/* Right Side Content */}
         <Box sx={{ flex: 1, border: "1px solid black", padding: 2 }}>

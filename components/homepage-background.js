@@ -73,7 +73,7 @@ export default function BackgroundImg() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginTop: "5rem"
+        marginTop: "5.5rem"
       }
     }>
       <CardMedia
@@ -83,7 +83,6 @@ export default function BackgroundImg() {
         sx={{
           mt: "2rem",
           padding: "1.5rem",
-          borderRadius: "2rem",
           maxHeight: 400,
           width: "350px",
           height: "300px",

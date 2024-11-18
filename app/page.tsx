@@ -15,7 +15,7 @@ export default function Home() {
       <Box sx={{ display: "flex", textAlign: "center", justifyContent: "center" }}>
         <Typography variant="body1" sx={{ pb: "3rem", width: "50%", textAlign: "center", justifyContent: "center", fontFamily: "Barriecito", color: "black", fontSize: "1.5rem" }}>Welcome to Daimonji, where tradition meets innovation in every dish.
           Our passion for crafting the finest sushi is at the heart of everything we do. Using only the freshest ingredients, we bring you an authentic dining experience that celebrates the art of sushi.
-          Whether you're here for a quick bite or a special celebration, we invite you to savor our delicious creations in a warm and inviting atmosphere.
+          Whether you&apos;re here for a quick bite or a special celebration, we invite you to savor our delicious creations in a warm and inviting atmosphere.
           Join us and experience the true taste of Japan!</Typography>
       </Box>
       <HomepageMap />

@@ -44,9 +44,6 @@ export default function Page() {
             <Typography variant="body1" sx={{ textAlign: "center" }}>
               Another Item
             </Typography>
-            <Typography variant="body1" sx={{ textAlign: "center" }}>
-              Another Item
-            </Typography>
           </Box>
         </Box>
       </Box>

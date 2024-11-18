@@ -2,6 +2,7 @@ import * as React from "react";
 import Image from "next/image";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
+import Rating from '@mui/material/Rating';
 import { Typography, Box } from "@mui/material";
 
 export default function Page() {
@@ -36,7 +37,7 @@ export default function Page() {
           <Box sx={{ flex: "1 1 50%" }}>
             <Image
               src="/images/our-story.jpg"
-              alt="Stephanie"
+              alt="Image of Stephanie"
               width={350}
               height={200}
               style={{ borderRadius: "10px", minWidth: "200px" }}
@@ -130,7 +131,7 @@ export default function Page() {
           <Box sx={{ flex: "1 1 50%" }}>
             <Image
               src="/images/our-philosophy.jpg"
-              alt="Alex with his family"
+              alt="Alex with preparing sushi"
               width={"400"}
               height={300}
               style={{ borderRadius: "10px" }}
@@ -146,15 +147,15 @@ export default function Page() {
         alignItems={"center"}
         sx={{
           padding: "1rem",
-          borderRadius: "10px",
+          borderRadius: "0.2px",
           width: { xs: "100%", sm: "100%", md: "90%" },
           justifyContent: "center",
           alignItems: "center",
-          margin: "0 auto"
+          margin: "1.5rem auto"
         }}
       >
-        <Typography variant="h3" sx={{ marginBottom: 2 }}>
-          Testimonials
+        <Typography variant="h5" sx={{ marginBottom: 2, fontWeight:"bold" }}>
+          See what our customers say about us!
         </Typography>
 
         {/* Section for yelp reviews dividing image on left and text on right  */}
@@ -164,19 +165,31 @@ export default function Page() {
           width={"100%"}
           sx={{
             maxWidth: "1200px",
-            border: "0.5px solid black",
             borderRadius: 1,
             overflow: "hidden",
+            mt:"1rem"
           }}
         >
           <Box sx={{ flex: 1, padding: 2, backgroundColor: "#fff" }}>
             {/* Image for yelp reviews */}
-            <Typography>Test</Typography>
+            <Rating
+              name="simple-controlled"
+              defaultValue={5}
+            />
+            <Typography variant="body1" sx={{ fontStyle: "italic", fontWeight: "bold", mb: "0.5rem" }}>"Delight in Every Bite"</Typography>
+            <Typography variant="body2">This sushi restaurant is a true gem! The rolls are fresh, beautifully presented, and bursting with flavor. The staff is incredibly friendly, creating a welcoming atmosphere that keeps me coming back for more.</Typography>
+
           </Box>
           <Box sx={{ width: "1px", backgroundColor: "black" }} />
           <Box sx={{ flex: 1, padding: 2, backgroundColor: "#fff" }}>
             {/* Section to add the Yelp API for dynamic reviews */}
-            <Typography>Reviews</Typography>
+            <Rating
+              name="simple-controlled"
+              defaultValue={4.5}
+              precision={0.5}
+            />
+            <Typography variant="body1" sx={{ fontStyle: "italic", fontWeight: "bold", mb: "0.5rem" }}>"Savor the Sushi Experience"</Typography>
+            <Typography variant="body2">The sushi here is always fresh and delicious, with unique flavors that stand out. The service is quick and attentive, making every visit a pleasure.</Typography>
           </Box>
         </Box>
       </Box>

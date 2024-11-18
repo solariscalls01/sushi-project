@@ -8,7 +8,7 @@ import { Typography, Box } from "@mui/material";
 export default function Page() {
   return (
     <div style={{
-      width: "90%",
+      width: "100%",
       margin: "auto",
     }}>
       <NavBar />
@@ -19,7 +19,7 @@ export default function Page() {
         width: { xs: "100%", sm: "100%", md: "90%" },
         justifyContent: "center",
         alignItems: "center",
-        margin: "0 auto"
+        margin: "5rem auto 0"
       }}>
         <Box
           sx={{
@@ -27,7 +27,7 @@ export default function Page() {
             flexDirection: { xs: "column", sm: "row" },
             alignItems: "center",
             gap: 2,
-            my: 10,
+            my: 5,
             mx: "auto",
             maxWidth: "1200px",
             pl: 4,

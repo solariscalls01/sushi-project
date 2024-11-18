@@ -16,6 +16,8 @@ export default function HomepageMap() {
           flexDirection: {xs: "column", sm: "row"},
           alignItems: "center",
           padding: 2,
+          background:"#b8011f",
+          borderRadius:"10px"
         }}
       >
         <Box sx={{ width: "80%", display: "flex", justifyContent: "center" }}>

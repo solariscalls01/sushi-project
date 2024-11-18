@@ -7,7 +7,7 @@ import clsx from "clsx";
 const links = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "Menu", href: "/menu" },
+  { name: "Menu", href: "/menu/appetizers" },
   { name: "To Go", href: "/togo" },
   // { name: "Reservations", href: "/reservations" },
 ];

@@ -10,6 +10,7 @@ export default function Page() {
     <div style={{
       width: "100%",
       margin: "auto",
+      fontFamily:"'Comic Sans MS', 'Papyrus', cursive, sans-serif"
     }}>
       <NavBar />
 
@@ -55,7 +56,8 @@ export default function Page() {
             <Typography
               variant="h4"
               component="h2"
-              sx={{ fontFamily: "Lobster", color: "black" }}
+              sx={{ fontFamily: "'Comic Sans MS', 'Papyrus', cursive", color: "black" }}
+              // sx={{ fontFamily: "Lobster", color: "black" }}
             >
               Our Story
             </Typography>
@@ -111,7 +113,8 @@ export default function Page() {
             <Typography
               variant="h4"
               component="h2"
-              sx={{ color: "#fff", fontFamily: "Lobster" }}
+              sx={{ fontFamily: "'Comic Sans MS', 'Papyrus', cursive", color: "#fff" }}
+              // sx={{ color: "#fff", fontFamily: "Lobster" }}
             >
               Daimonji&apos;s Philosophy
             </Typography>
@@ -131,7 +134,7 @@ export default function Page() {
           <Box sx={{ flex: "1 1 50%" }}>
             <Image
               src="/images/our-philosophy.jpg"
-              alt="Alex with preparing sushi"
+              alt="Alex preparing sushi"
               width={"400"}
               height={300}
               style={{ borderRadius: "10px" }}

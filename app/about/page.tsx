@@ -176,7 +176,7 @@ export default function Page() {
               name="simple-controlled"
               defaultValue={5}
             />
-            <Typography variant="body1" sx={{ fontStyle: "italic", fontWeight: "bold", mb: "0.5rem" }}>"Delight in Every Bite"</Typography>
+            <Typography variant="body1" sx={{ fontStyle: "italic", fontWeight: "bold", mb: "0.5rem" }}>&quot;Delight in Every Bite&quot;</Typography>
             <Typography variant="body2">This sushi restaurant is a true gem! The rolls are fresh, beautifully presented, and bursting with flavor. The staff is incredibly friendly, creating a welcoming atmosphere that keeps me coming back for more.</Typography>
 
           </Box>
@@ -188,7 +188,7 @@ export default function Page() {
               defaultValue={4.5}
               precision={0.5}
             />
-            <Typography variant="body1" sx={{ fontStyle: "italic", fontWeight: "bold", mb: "0.5rem" }}>"Savor the Sushi Experience"</Typography>
+            <Typography variant="body1" sx={{ fontStyle: "italic", fontWeight: "bold", mb: "0.5rem" }}>&quot;Savor the Sushi Experience&quot;</Typography>
             <Typography variant="body2">The sushi here is always fresh and delicious, with unique flavors that stand out. The service is quick and attentive, making every visit a pleasure.</Typography>
           </Box>
         </Box>

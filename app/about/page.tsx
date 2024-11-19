@@ -177,6 +177,7 @@ export default function Page() {
             {/* Image for yelp reviews */}
             <Rating
               name="simple-controlled"
+              readOnly
               defaultValue={5}
             />
             <Typography variant="body1" sx={{ fontStyle: "italic", fontWeight: "bold", mb: "0.5rem" }}>&quot;Delight in Every Bite&quot;</Typography>
@@ -189,6 +190,7 @@ export default function Page() {
             <Rating
               name="simple-controlled"
               defaultValue={4.5}
+              readOnly
               precision={0.5}
             />
             <Typography variant="body1" sx={{ fontStyle: "italic", fontWeight: "bold", mb: "0.5rem" }}>&quot;Savor the Sushi Experience&quot;</Typography>

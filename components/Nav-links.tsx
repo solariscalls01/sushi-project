@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
 const links = [
-  { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
   { name: "Menu", href: "/menu/appetizers" },
-  { name: "To Go", href: "/togo" },
+  { name: "Order To Go", href: "/togo" },
+  { name: "About Us", href: "/about" },
+  { name: "Home", href: "/" },
   // { name: "Reservations", href: "/reservations" },
 ];
 

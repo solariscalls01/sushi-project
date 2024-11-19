@@ -20,14 +20,14 @@ const alcohol = [
     price_small: 8,
     price_large: null,
     description: "null",
-    image_url: "null",
+    image_url: "/images/alcohol/red-white-wine.png",
   },
   {
     name: "Otokoyama Sake",
     price_small: 16,
     price_large: null,
     description: "Served in Traditional Sake box",
-    image_url: "null",
+    image_url: "/images/alcohol/otokoyama-sake.png",
   },
   {
     name: "Harushika Sake",
@@ -82,7 +82,7 @@ const appetizers = [
     price: 9,
     description:
       "Savor our lightly crispy agadashi tofu, served in a delicate dashi broth, garnished with green onions and grated daikon for a touch of umami perfection.",
-    image_url: "/public/images/appetizers/agadashi-tofu.jpg",
+    image_url: "/images/appetizers/agadashi-tofu.jpg",
   },
   {
     name: "Gyoza",
@@ -117,7 +117,7 @@ const appetizers = [
     price: 8,
     description:
       "Savor our refreshing squid salad, featuring tender squid mixed with crisp vegetables and a tangy dressing for a burst of flavor in every bite",
-    image_url: "null",
+    image_url: "/images/appetizers/squid-salad.jpg",
   },
   {
     name: "Miso Soup",
@@ -148,20 +148,20 @@ const bento = [
     price: 29,
     description:
       "Chefs choice of sushi & sashimi, chicken cutlet, assorted tempura & edamame",
-    image_url: "null",
+    image_url: "/images/bento/makunouchi.jpg",
   },
   {
     name: "Georgetown",
     price: 28,
     description:
       "Grilled salmon, assorted tempura, shrimp tempura roll & edamame",
-    image_url: "null",
+    image_url: "/images/bento/georgetown.jpg",
   },
   {
     name: "Seattle",
     price: 26,
     description: "Chefs choice of sashimi, teriyaki salmon & chicken & edamame",
-    image_url: "null",
+    image_url: "/images/bento/seattle.jpg",
   },
 ];
 
@@ -182,7 +182,7 @@ const chirashi = [
     name: "Poke Don",
     price: 22,
     description: "Mixed diced marinated fish on sushi rice",
-    image_url: "null",
+    image_url: "/images/chirashi/Poke-don.jpg",
   },
   {
     name: "Unagi Don",
@@ -194,8 +194,7 @@ const chirashi = [
     name: "Daimonji Deluxe",
     price: 28,
     description: "Seasonal Chefs choice over rice",
-    image_url:
-      "/images/chirashi/Deluxe-bowl.jpg",
+    image_url: "/images/chirashi/Deluxe-bowl.jpg",
   },
 ];
 
@@ -236,14 +235,14 @@ const handrolls = [
     price: 6,
     description:
       "Tender Tuna meets a kick of spice, wrapped with Vinegared Rice and Nori",
-    image_url: "null",
+    image_url: "/images/roll/spicy-tuna.jpg",
   },
   {
     name: "Eel Avocado",
     price: 7,
     description:
       "Tender Eel and Creamy Avocado, wrapped with Vinegared Rice and Nori",
-    image_url: "null",
+    image_url: "/images/roll/eel-avocado.jpg",
   },
 ];
 
@@ -252,91 +251,91 @@ const nigiri = [
     name: "Maguro (Tuna)",
     price_nigiri: 7.5,
     price_sashimi: 15,
-    image_url: null,
+    image_url: "/images/roll/tuna.png",
     market_price: null,
   },
   {
     name: "Hamashi (Yellow Tail)",
     price_nigiri: 8,
     price_sashimi: 16,
-    image_url: null,
+    image_url: "/images/roll/yellowtail.png",
     market_price: null,
   },
   {
     name: "Sake (Atlantic Salmon)",
     price_nigiri: 6,
     price_sashimi: 12,
-    image_url: null,
+    image_url: "/images/roll/salmon.png",
     market_price: null,
   },
   {
     name: "Shiro Maguro (Albacore)",
     price_nigiri: 7.5,
     price_sashimi: 15,
-    image_url: null,
+    image_url: "/images/roll/albacore.png",
     market_price: null,
   },
   {
     name: "Ebi (Shrimp)",
     price_nigiri: 5,
     price_sashimi: 10,
-    image_url: null,
+    image_url: "/images/roll/ebi-shrimp.png",
     market_price: null,
   },
   {
     name: "Unagi (Freshwater Eel)",
     price_nigiri: 7.5,
     price_sashimi: 15,
-    image_url: null,
+    image_url: "/images/roll/unagi.png",
     market_price: null,
   },
   {
     name: "Wild Sockeye Salmon",
     price_nigiri: 8,
     price_sashimi: 16,
-    image_url: null,
+    image_url: "/images/roll/wild-salmon.png",
     market_price: null,
   },
   {
     name: "Amaebi (Shrimp)",
     price_nigiri: 10,
     price_sashimi: 20,
-    image_url: null,
+    image_url: "/images/roll/amaebi.png",
     market_price: null,
   },
   {
     name: "Ikura (House Cured Salmon Roe)",
     price_nigiri: 10,
     price_sashimi: 20,
-    image_url: null,
+    image_url: "/images/roll/ikura.png",
     market_price: null,
   },
   {
     name: "Tobiko (Flying Fish Egg)",
     price_nigiri: 6,
     price_sashimi: 12,
-    image_url: null,
+    image_url: "/images/roll/tobiko.png",
     market_price: null,
   },
   {
     name: "Tamago (House Egg Omelette)",
     price_nigiri: 5.5,
     price_sashimi: 11,
-    image_url: null,
+    image_url: "/images/roll/tamago.png",
     market_price: null,
   },
   {
     name: "Inari (Fried Bean Cured)",
     price_nigiri: 5,
     price_sashimi: 10,
-    image_url: null,
+    image_url: "/images/roll/inari.png",
     market_price: null,
   },
   {
     name: "Fish of the Day",
     price_nigiri: null,
     price_sashimi: null,
-    image_url: null,
+    image_url: "/images/roll/fish-of-day.png",
     market_price: "MP",
   },
 ];
@@ -374,131 +373,131 @@ const rolls = [
     name: "Four Season",
     price: 14,
     description: "Tuna, Salmon, Yellowtail, Albacore, & Green Onions",
-    image_url: "null",
+    image_url: "/images/roll/four-season.png",
   },
   {
     name: "Daimonji",
     price: 16,
     description: "California Roll topped with Spicy Tuna & Crunchies",
-    image_url: "null",
+    image_url: "/images/roll/daimonji.png",
   },
   {
     name: "Spider",
     price: 13,
     description: "Soft Shell Crab, Cucumber, Avocado & Tobiko",
-    image_url: "null",
+    image_url: "/images/roll/spider.png",
   },
   {
     name: "Ebi Temp",
     price: 13,
     description: "Fried Shrimp, Avocado, Cucumber",
-    image_url: "null",
+    image_url: "/images/roll/ebi-temp.png",
   },
   {
     name: "Tekka Tuna Maki",
     price: 8,
-    description: "Fresh tuna wrapped in a vinegared rice and seaweed roll.",
-    image_url: "null",
+    description: "Fresh tuna wrapped in a vinegared rice and seaweed roll",
+    image_url: "/images/roll/tekka-tuna-maki.png",
   },
   {
     name: "Salmon Maki",
     price: 8,
     description: "Salmon with vinegared rice, wrapped in seaweed",
-    image_url: "null",
+    image_url: "/images/roll/salmon-maki.png",
   },
   {
     name: "Seattle",
     price: 10,
     description: "Salmon, Crab, Avocado, Mint Leaf",
-    image_url: "null",
+    image_url: "/images/roll/seattle.png",
   },
   {
     name: "Negi Hama",
     price: 11,
     description: "Yellowtail, Green Onion",
-    image_url: "null",
+    image_url: "/images/roll/negi-hama.png",
   },
   {
     name: "Eel Avocado",
     price: 12,
     description: "Freshwater Eel & Avocado",
-    image_url: "null",
+    image_url: "/images/roll/eel-avocado.png",
   },
   {
     name: "Salmon Skin",
     price: 9,
     description: "Crispy Salmon Skin & Cucumber",
-    image_url: "null",
+    image_url: "/images/roll/salmon-skin.png",
   },
   {
     name: "Rosanna",
     price: 14,
     description: "Scallop, Crab, Fish Roe, Avocado, Mayo",
-    image_url: "null",
+    image_url: "/images/roll/rosanna.png",
   },
   {
     name: "Red Devil",
     price: 22,
     description:
       "Extra Spicy Tuna, Avocado, Cucumber, topped with more Tuna, Peppers & Jalapeno",
-    image_url: "null",
+    image_url: "/images/roll/red-devil.png",
   },
   {
     name: "Mad Tiger",
     price: 22,
     description:
       "California Roll topped with Tuna, Salmon, Eel, Avocado with Mad Sauce",
-    image_url: "null",
+    image_url: "/images/roll/mad-tiger.png",
   },
   {
     name: "California Roll",
     price: 8,
     description: "Crab, Avocado, Mayo, Cucumber, Roe",
-    image_url: "null",
+    image_url: "/images/roll/california-roll.png",
   },
   {
     name: "Futomaki",
     price: 10,
     description: "Freshwater Eel, Avocado, Egg, Inari",
-    image_url: "null",
+    image_url: "/images/roll/futomaki.jpg",
   },
   {
     name: "Happy",
     price: 15,
     description: "Wild Sockeye Salmon, Avocado, Ikura & Shiso",
-    image_url: "null",
+    image_url: "/images/roll/happy.jpg",
   },
   {
     name: "Allison",
     price: 18,
     description:
       "Crab, Avocado, Cucumber, topped with Albacore, Fish Roe, Green Onion, Roe",
-    image_url: "null",
+    image_url: "/images/roll/allison.jpg",
   },
   {
-    name: "Catepillar",
+    name: "Caterpillar",
     price: 10,
     description: "Freshwater Eel, Avocado, Cucumber",
-    image_url: "null",
+    image_url: "/images/roll/caterpillar.jpg",
   },
   {
     name: "Lucky",
     price: 16,
     description: "California Topped Seared Salmon served with Fried Onion",
-    image_url: "null",
+    image_url: "/images/roll/lucky.jpg",
   },
   {
     name: "Dragon",
     price: 10,
     description:
       "Tempura Prawn & Cucumber, topped with Freshwater Eel & Avocado",
-    image_url: "null",
+    image_url: "/images/roll/dragon.jpg",
   },
   {
     name: "Spicy Crazy Dragon",
     price: 22,
     description: "Tempura Prawn & Cucumber topped with Salmon & Freshwater Eel",
-    image_url: "null",
+    image_url: "/images/roll/spicy-crazy-dragon.jpg",
   },
 ];
 
@@ -508,20 +507,20 @@ const signatureCombo = [
     price: 27,
     description:
       "Chef choice sashimi (6pc). Nigiri (3pc), spicy tuna, hand roll, and miso soup",
-    image_url: "null",
+    image_url: "/images/roll/daimonji-sampler.jpg",
   },
   {
     name: "Sushi Combo",
     price: 25,
     description:
       "Tuna, salmon, yellowtail, albacore, ebi shrimp, tamago egg, spicy tuna roll, and miso soup",
-    image_url: "null",
+    image_url: "/images/roll/sushi-combo.jpg",
   },
   {
     name: "Sashimi Combo",
     price: 28,
     description: "Yellowtail, salmon, tuna, albacore, ebi, and miso soup",
-    image_url: "null",
+    image_url: "/images/roll/sashimi-combo.jpg",
   },
 ];
 
@@ -573,7 +572,7 @@ const signatureDishes = [
     price: 30,
     description:
       "Chefs choice sushi, assorted tempura, rice, salad, miso soup, and one choice of the following item: 1) Teriyaki Chicken or Beef 2) Grilled Saba (Macakerel) 3) Teriyaki Salmon (2pc) 4) Black Cod Kasuzake (add $4)",
-    image_url: "null",
+    image_url: "/images/roll/daimonji-dinner-combo.jpg",
   },
 ];
 
@@ -602,20 +601,20 @@ const veggieRoll = [
     price: 6,
     description:
       "Tangy Pickled Plum and fragrant Shiso Leaf, wrapped with Vinegared Rice and Nori",
-    image_url: "null",
+    image_url: "/images/roll/ume-shiso.jpg",
   },
   {
     name: "Yummy",
     price: 10,
     description: "Shiso Leaf, Avocado, Inari, Kaiware",
-    image_url: "null",
+    image_url: "/images/roll/yummy.jpg",
   },
   {
     name: "Veggie Tempura",
     price: 10,
     description:
       "Crispy Tempura Vegetables, wrapped with Vinegared Rice and Crisp Nori",
-    image_url: "null",
+    image_url: "/images/roll/veggie-tempura.jpg",
   },
 ];
 

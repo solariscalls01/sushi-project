@@ -39,7 +39,7 @@ export default function Page() {
             {/* Using Grid component to create horizontal cards */}
             <Grid container spacing={12} sx={{ textAlign: "center", justifyContent: "center" }}>
               {getCombosInfo.rows.map((item) => (
-                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 250, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
+                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 400, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
@@ -67,6 +67,15 @@ export default function Page() {
                         fontWeight={200}
                       >
                         {item.name}
+                      </Typography>
+                      <Typography
+                        gutterBottom
+                        variant="body2"
+                        component="div"
+                        fontFamily={"Noto Sans"}
+                        fontWeight={200}
+                      >
+                        {item.description}
                       </Typography>
                     </CardContent>
                   </CardActionArea>

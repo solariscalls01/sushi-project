@@ -1,7 +1,7 @@
 import * as React from "react";
 import Header from "../../../components/NavBar";
 import Footer from "../../../components/Footer";
-import { Box, createTheme, Typography } from "@mui/material";
+import { Box, createTheme, Divider, Typography } from "@mui/material";
 import NavLinksMenu from "../dashboard/nav-links";
 import BackgroundImg from "@/components/homepage-background";
 import Card from "@mui/material/Card";
@@ -53,7 +53,7 @@ export default function Page() {
             {/* Using Grid component to create horizontal cards */}
             <Grid container spacing={12} sx={{ textAlign: "center", justifyContent: "center" }}>
               {getHandRollsInfo.rows.map((item) => (
-                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 250, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
+                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 400, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
@@ -81,13 +81,22 @@ export default function Page() {
                         fontWeight={200}
                       >
                         {item.name}
+                      </Typography>
+                      <Typography
+                        gutterBottom
+                        variant="body2"
+                        component="div"
+                        fontFamily={"Noto Sans"}
+                        fontWeight={200}
+                      >
+                        {item.description}
                       </Typography>
                     </CardContent>
                   </CardActionArea>
                 </Card>
               ))}
               {getNigiriInfo.rows.map((item) => (
-                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 250, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
+                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 400, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
@@ -102,10 +111,10 @@ export default function Page() {
                         variant="h6"
                         component="div"
                         fontFamily={"Noto"}
-                        fontWeight={200}
+                        fontWeight={400}
                         textAlign={"center"}
                       >
-                        {item.price}
+                        {`Nigiri: ${item.price_nigiri}  |  Sashimi: ${item.price_sashimi}`}
                       </Typography>
                       <Typography
                         gutterBottom
@@ -116,12 +125,13 @@ export default function Page() {
                       >
                         {item.name}
                       </Typography>
+
                     </CardContent>
                   </CardActionArea>
                 </Card>
               ))}
               {getRollsInfo.rows.map((item) => (
-                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 250, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
+                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 400, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
@@ -149,13 +159,22 @@ export default function Page() {
                         fontWeight={200}
                       >
                         {item.name}
+                      </Typography>
+                      <Typography
+                        gutterBottom
+                        variant="body2"
+                        component="div"
+                        fontFamily={"Noto Sans"}
+                        fontWeight={200}
+                      >
+                        {item.description}
                       </Typography>
                     </CardContent>
                   </CardActionArea>
                 </Card>
               ))}
               {getVeggieRollInfo.rows.map((item) => (
-                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 250, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
+                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 400, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
@@ -183,6 +202,15 @@ export default function Page() {
                         fontWeight={200}
                       >
                         {item.name}
+                      </Typography>
+                      <Typography
+                        gutterBottom
+                        variant="body2"
+                        component="div"
+                        fontFamily={"Noto Sans"}
+                        fontWeight={200}
+                      >
+                        {item.description}
                       </Typography>
                     </CardContent>
                   </CardActionArea>

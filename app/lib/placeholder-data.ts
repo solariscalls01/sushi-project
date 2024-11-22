@@ -12,14 +12,14 @@ const alcohol = [
     name: "Plum Wine",
     price_small: 6,
     price_large: null,
-    description: "null",
+    description: null,
     image_url: "https://media.istockphoto.com/id/1291170323/photo/close-up-of-tables-tableware-and-a-cup-of-plum-wine-in-a-japanese-restaurant.jpg?s=2048x2048&w=is&k=20&c=Nb69rXe0TA5HZFOfczoIPjX2gUJhKUjZKhzRAjmZukU=",
   },
   {
     name: "Red or White Wine",
     price_small: 8,
     price_large: null,
-    description: "null",
+    description: null,
     image_url: "/images/alcohol/red-white-wine.jpg",
   },
   {
@@ -56,7 +56,7 @@ const alcohol = [
     name: "House Hot Sake",
     price_small: 6,
     price_large: 8,
-    description: "null",
+    description: null,
     image_url: "https://media.istockphoto.com/id/1297277631/photo/sake-pouring-traditional-distilled-and-fermented-alcohol-from-japan-served-hot-black.jpg?s=2048x2048&w=is&k=20&c=DqY0DSx9CmudCuiplBJHoT4tZdROUac_45LTSKEFm0s=",
 
   },

@@ -69,6 +69,15 @@ export default function Page() {
                       >
                         {item.name}
                       </Typography>
+                      <Typography
+                        gutterBottom
+                        variant="body2"
+                        component="div"
+                        fontFamily={"Noto Sans"}
+                        fontWeight={200}
+                      >
+                        {item.description}
+                      </Typography>
                     </CardContent>
                   </CardActionArea>
                 </Card>

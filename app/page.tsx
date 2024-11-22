@@ -18,7 +18,7 @@ export default function Home() {
           Whether you&apos;re here for a quick bite or a special celebration, we invite you to savor our delicious creations in a warm and inviting atmosphere.
           Join us and experience the true taste of Japan!
           <Typography variant="h6" sx={{ paddingTop:"1.1rem", fontFamily: "Barriecito", color: "black", fontSize: "1.4rem", fontWeight:"bold" }} >
-            Make a reservation by calling: <Link href="tel:+1(206)762-7820" variant="h6" color="#fb0002" underline="hover" >
+            Make a reservation by calling: <Link href="tel:+1(206)762-7820" variant="h6" color="#fb0002" underline="hover" > 
               {"(206)762-7820"}
             </Link>
           </Typography>

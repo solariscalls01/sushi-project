@@ -49,11 +49,20 @@ export default function Page() {
         {/* Section for Menu items */}
         <Box sx={{ padding: 2 }}>
           <Box sx={{ border: "1px solid #FBFBFB", marginTop: 3, padding: 1 }}>
-
-            {/* Using Grid component to create horizontal cards */}
-            <Grid container spacing={12} sx={{ textAlign: "center", justifyContent: "center" }}>
+            {/* Hand Rolls Section */}
+            <Typography variant="h2" sx={{ marginBottom: 2 }}>Hand Rolls</Typography>
+            <Grid container spacing={3} sx={{ textAlign: "center", justifyContent: "center" }}>
               {getHandRollsInfo.rows.map((item) => (
-                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 250, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
+                <Card
+                  sx={{
+                    width: { xs: "100%", sm: "80%", md: "80%" },
+                    maxWidth: 400,
+                    padding: "0.5rem",
+                    border: "0.4px solid #FEF9F2",
+                    borderRadius: "10px",
+                  }}
+                  key={item.name}
+                >
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
@@ -82,12 +91,35 @@ export default function Page() {
                       >
                         {item.name}
                       </Typography>
+                      <Typography
+                        gutterBottom
+                        variant="body2"
+                        component="div"
+                        fontFamily={"Noto Sans"}
+                        fontWeight={200}
+                      >
+                        {item.description}
+                      </Typography>
                     </CardContent>
                   </CardActionArea>
                 </Card>
               ))}
+            </Grid>
+
+            {/* Sashimi / Nigiri Section */}
+            <Typography variant="h2" sx={{ marginTop: 4, marginBottom: 2 }}>Sashimi / Nigiri</Typography>
+            <Grid container spacing={3} sx={{ textAlign: "center", justifyContent: "center" }}>
               {getNigiriInfo.rows.map((item) => (
-                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 250, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
+                <Card
+                  sx={{
+                    width: { xs: "100%", sm: "80%", md: "80%" },
+                    maxWidth: 400,
+                    padding: "0.5rem",
+                    border: "0.4px solid #FEF9F2",
+                    borderRadius: "10px",
+                  }}
+                  key={item.name}
+                >
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
@@ -102,78 +134,12 @@ export default function Page() {
                         variant="h6"
                         component="div"
                         fontFamily={"Noto"}
-                        fontWeight={200}
+                        fontWeight={400}
                         textAlign={"center"}
                       >
-                        {item.price}
-                      </Typography>
-                      <Typography
-                        gutterBottom
-                        variant="h5"
-                        component="div"
-                        fontFamily={"Noto Sans"}
-                        fontWeight={200}
-                      >
-                        {item.name}
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              ))}
-              {getRollsInfo.rows.map((item) => (
-                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 250, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
-                  <CardActionArea sx={{ pointerEvents: "none" }}>
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image={item.image_url}
-                      alt={`image of ${item.name}`}
-                      sx={{ maxWidth: "100%", maxHeight: "250px", objectFit: "contain", borderRadius: "10px" }}
-                    />
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant="h6"
-                        component="div"
-                        fontFamily={"Noto"}
-                        fontWeight={200}
-                        textAlign={"center"}
-                      >
-                        {item.price}
-                      </Typography>
-                      <Typography
-                        gutterBottom
-                        variant="h5"
-                        component="div"
-                        fontFamily={"Noto Sans"}
-                        fontWeight={200}
-                      >
-                        {item.name}
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              ))}
-              {getVeggieRollInfo.rows.map((item) => (
-                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 250, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
-                  <CardActionArea sx={{ pointerEvents: "none" }}>
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image={item.image_url}
-                      alt={`image of ${item.name}`}
-                      sx={{ maxWidth: "100%", maxHeight: "250px", objectFit: "contain", borderRadius: "10px" }}
-                    />
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant="h6"
-                        component="div"
-                        fontFamily={"Noto"}
-                        fontWeight={200}
-                        textAlign={"center"}
-                      >
-                        {item.price}
+                        {/* Conditional for when nigiri/ sashimi price is null (for setting market price) */}
+                        {!item.price_nigiri && !item.price_sashimi ? "Market Price" : `Nigiri: ${item.price_nigiri}  |  Sashimi: ${item.price_sashimi}`
+                        }
                       </Typography>
                       <Typography
                         gutterBottom
@@ -189,10 +155,120 @@ export default function Page() {
                 </Card>
               ))}
             </Grid>
+            <Typography variant="h2" sx={{ marginTop: 4, marginBottom: 2 }}>Sushi Rolls</Typography>
+            <Grid container spacing={3} sx={{ textAlign: "center", justifyContent: "center" }}>
+              {getRollsInfo.rows.map((item) => (
+                <Card
+                  sx={{
+                    width: { xs: "100%", sm: "80%", md: "80%" },
+                    maxWidth: 400,
+                    padding: "0.5rem",
+                    border: "0.4px solid #FEF9F2",
+                    borderRadius: "10px",
+                  }}
+                  key={item.name}
+                >
+                  <CardActionArea sx={{ pointerEvents: "none" }}>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image={item.image_url}
+                      alt={`image of ${item.name}`}
+                      sx={{ maxWidth: "100%", maxHeight: "250px", objectFit: "contain", borderRadius: "10px" }}
+                    />
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant="h6"
+                        component="div"
+                        fontFamily={"Noto"}
+                        fontWeight={400}
+                        textAlign={"center"}
+                      >
+                        {item.price}
+                      </Typography>
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="div"
+                        fontFamily={"Noto Sans"}
+                        fontWeight={200}
+                      >
+                        {item.name}
+                      </Typography>
+                      <Typography
+                        gutterBottom
+                        variant="body2"
+                        component="div"
+                        fontFamily={"Noto Sans"}
+                        fontWeight={200}
+                      >
+                        {item.description}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              ))}
+            </Grid>
+            <Typography variant="h2" sx={{ marginTop: 4, marginBottom: 2 }}>Veggie Rolls</Typography>
+            <Grid container spacing={3} sx={{ textAlign: "center", justifyContent: "center" }}>
+              {getVeggieRollInfo.rows.map((item) => (
+                <Card
+                  sx={{
+                    width: { xs: "100%", sm: "80%", md: "80%" },
+                    maxWidth: 400,
+                    padding: "0.5rem",
+                    border: "0.4px solid #FEF9F2",
+                    borderRadius: "10px",
+                  }}
+                  key={item.name}
+                >
+                  <CardActionArea sx={{ pointerEvents: "none" }}>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image={item.image_url}
+                      alt={`image of ${item.name}`}
+                      sx={{ maxWidth: "100%", maxHeight: "250px", objectFit: "contain", borderRadius: "10px" }}
+                    />
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant="h6"
+                        component="div"
+                        fontFamily={"Noto"}
+                        fontWeight={400}
+                        textAlign={"center"}
+                      >
+                        {item.price}
+                      </Typography>
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="div"
+                        fontFamily={"Noto Sans"}
+                        fontWeight={200}
+                      >
+                        {item.name}
+                      </Typography>
+                      <Typography
+                        gutterBottom
+                        variant="body2"
+                        component="div"
+                        fontFamily={"Noto Sans"}
+                        fontWeight={200}
+                      >
+                        {item.description}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              ))}
+            </Grid>
           </Box>
         </Box>
       </Box>
       <Footer />
-    </div>
+    </div >
   );
 }

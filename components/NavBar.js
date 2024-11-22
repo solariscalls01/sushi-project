@@ -88,16 +88,33 @@ export default function DrawerAppBar(props) {
         <AppBar
           component="nav"
           sx={{
-            backgroundColor: "#3594e8",
+            display: "flex",
+            justifyContent: "center",
+            backgroundColor: "#143A52",
             color: "#FFF",
             "& .MuiTypography-root": {
               fontWeight: "bold",
             },
           }}
         >
-          <Toolbar sx={{ justifyContent: "space-between" }}>
-            <DaimonjiLogo />
-            <Box sx={{ flexGrow: 1 }} />
+          <Toolbar sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <DaimonjiLogo />
+            </Box>
+            <Typography
+              variant="h5"
+              sx={{
+                textAlign: "center",
+                flexGrow: 1
+              }}
+            >
+              Daimonji Sushi Bar & Grill
+            </Typography>
+
+            <Box sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}>
+              <NavLinks />
+            </Box>
+
             <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -107,9 +124,6 @@ export default function DrawerAppBar(props) {
             >
               <MenuIcon />
             </IconButton>
-            <Box sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}>
-              <NavLinks />
-            </Box>
           </Toolbar>
         </AppBar>
       </HideOnScroll>

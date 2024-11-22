@@ -21,7 +21,7 @@ export default function SimpleBottomNavigation() {
       margin: "3rem auto",
       borderRadius: "10px"
     }}>
-      <Box sx={{ bgcolor: "#B8001F", color: "#fff", p: 2, borderRadius: "10px" }}>
+      <Box sx={{ bgcolor: "#143A52", color: "#fff", p: 2, borderRadius: "10px" }}>
         {/* Contact Information - Top Left */}
         <Box sx={{ mb: 2 }}>
           <Typography variant="h6" gutterBottom sx={{ fontSize: { xs: '0.75rem', sm: "1rem" } }}>
@@ -100,7 +100,7 @@ export default function SimpleBottomNavigation() {
           </Typography>
         </Box>
         <Box sx={{ textAlign: "center" }}>
-          <Typography variant="caption" sx={{ fontSize: { xs: "6px", sm: "8px" }, }}>
+          <Typography variant="caption" sx={{ fontSize: { xs: "8px", sm: "10px" }, }}>
             &quot;Images displayed on this site were either generated using AI tools, sourced from royalty-free stock image photos from pixabay/iStock, or sourced from the official Daimonji Facebook page.&quot;
           </Typography>
         </Box>

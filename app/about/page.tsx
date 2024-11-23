@@ -4,13 +4,13 @@ import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import Rating from '@mui/material/Rating';
 import { Typography, Box } from "@mui/material";
+import { Sawarabi_Mincho } from "next/font/google";
 
 export default function Page() {
   return (
     <div style={{
       width: "100%",
       margin: "auto",
-      fontFamily:"'Comic Sans MS', 'Papyrus', cursive, sans-serif"
     }}>
       <NavBar />
 
@@ -56,8 +56,7 @@ export default function Page() {
             <Typography
               variant="h4"
               component="h2"
-              sx={{ fontFamily: "'Comic Sans MS', 'Papyrus', cursive", color: "black" }}
-              // sx={{ fontFamily: "Lobster", color: "black" }}
+              sx={{ fontFamily: 'Sawarabi Mincho', color: "black" }}
             >
               Our Story
             </Typography>
@@ -113,7 +112,7 @@ export default function Page() {
             <Typography
               variant="h4"
               component="h2"
-              sx={{ fontFamily: "'Comic Sans MS', 'Papyrus', cursive", color: "#fff" }}
+              // sx={{ fontFamily: "'Comic Sans MS', 'Papyrus', cursive", color: "#fff" }}
               // sx={{ color: "#fff", fontFamily: "Lobster" }}
             >
               Daimonji&apos;s Philosophy

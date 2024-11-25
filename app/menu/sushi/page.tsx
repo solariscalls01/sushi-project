@@ -53,8 +53,8 @@ export default function Page() {
             {/* Hand Rolls Section */}
             <Typography variant="h2" sx={{ marginBottom: 2 }}>Hand Rolls</Typography>
             <Grid container spacing={4} sx={{ textAlign: "center", justifyContent: "center" }}>
-              {getHandRollsInfo.rows.map((item) => (
-                <MenuCardItems item={item}/>
+              {getHandRollsInfo.rows.map((item, index) => (
+                <MenuCardItems key={item.id || index} item={item}/>
               ))}
             </Grid>
 
@@ -107,14 +107,14 @@ export default function Page() {
             </Grid>
             <Typography variant="h2" sx={{ marginTop: 4, marginBottom: 2 }}>Sushi Rolls</Typography>
             <Grid container spacing={3} sx={{ textAlign: "center", justifyContent: "center" }}>
-              {getRollsInfo.rows.map((item) => (
-                <MenuCardItems item={item}/>
+              {getRollsInfo.rows.map((item, index) => (
+                <MenuCardItems key={item.id || index} item={item}/>
               ))}
             </Grid>
             <Typography variant="h2" sx={{ marginTop: 4, marginBottom: 2 }}>Veggie Rolls</Typography>
             <Grid container spacing={3} sx={{ textAlign: "center", justifyContent: "center" }}>
-              {getVeggieRollInfo.rows.map((item) => (
-                <MenuCardItems item={item}/>
+              {getVeggieRollInfo.rows.map((item, index) => (
+                <MenuCardItems key={item.id || index} item={item}/>
               ))}
             </Grid>
           </Box>

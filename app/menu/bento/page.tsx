@@ -1,7 +1,7 @@
 import * as React from "react";
 import Header from "../../../components/NavBar";
 import Footer from "../../../components/Footer";
-import { Box, createTheme, Menu, Typography } from "@mui/material";
+import { Box, createTheme, Typography } from "@mui/material";
 import NavLinksMenu from "../dashboard/nav-links";
 import BackgroundImg from "@/components/homepage-background";
 import Grid from '@mui/material/Grid2';

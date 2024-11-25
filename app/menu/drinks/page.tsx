@@ -42,8 +42,8 @@ export default function Page() {
             {/* Using Grid component to create horizontal cards */}
             <Typography variant="h4">Non-Alcoholic Beverages</Typography>
             <Grid container spacing={12} sx={{ textAlign: "center", justifyContent: "center" }}>
-              {getDrinksInfo.rows.map((item) => (
-                <MenuCardItems item={item} />
+              {getDrinksInfo.rows.map((item, index) => (
+                <MenuCardItems key={item.id || index} item={item}/>
               ))}
               {/* Alcohol section */}
               <Typography variant="h4">Alcoholic Beverages</Typography>

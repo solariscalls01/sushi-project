@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {sawarabi} from '@/app/ui/fonts'
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { CssBaseline } from "@mui/material";
 import ThemeRegistry from "./themeregistry";
 
 

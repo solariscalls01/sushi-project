@@ -24,6 +24,7 @@ export default function Page() {
   theme.spacing(24);
 
 
+
   return (
     <div style={{
       width: "80%",
@@ -42,7 +43,7 @@ export default function Page() {
             {/* Using Grid component to create horizontal cards */}
             <Grid container spacing={12} sx={{ textAlign: "center", justifyContent: "center" }}>
               {getAppetizerInfo.rows.map((item) => (
-                <Card sx={{ width: { xs: "100%", sm: "80%", md: "80%" }, maxWidth: 400, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
+                <Card sx={{ width: { xs: "100%", sm: "99%", md: "99%" }, maxWidth: 400, padding: "0.5rem", border: "0.4px solid #FEF9F2", borderRadius: "10px" }} key={item.name}>
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
@@ -56,7 +57,6 @@ export default function Page() {
                         gutterBottom
                         variant="h6"
                         component="div"
-                        fontFamily={"Noto"}
                         fontWeight={200}
                         textAlign={"center"}
                       >
@@ -66,7 +66,6 @@ export default function Page() {
                         gutterBottom
                         variant="h5"
                         component="div"
-                        fontFamily={"Noto Sans"}
                         fontWeight={200}
                       >
                         {item.name}
@@ -75,7 +74,6 @@ export default function Page() {
                         gutterBottom
                         variant="body2"
                         component="div"
-                        fontFamily={"Noto Sans"}
                         fontWeight={200}
                       >
                         {item.description}

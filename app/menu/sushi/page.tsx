@@ -55,7 +55,7 @@ export default function Page() {
               {getHandRollsInfo.rows.map((item) => (
                 <Card
                   sx={{
-                    width: { xs: "100%", sm: "80%", md: "80%" },
+                    width: { xs: "100%", sm: "99%", md: "99%" },
                     maxWidth: 400,
                     padding: "0.5rem",
                     border: "0.4px solid #FEF9F2",
@@ -66,7 +66,7 @@ export default function Page() {
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
-                      height="140"
+                      height="250"
                       image={item.image_url}
                       alt={`image of ${item.name}`}
                       sx={{ maxWidth: "100%", maxHeight: "250px", objectFit: "contain", borderRadius: "10px" }}
@@ -76,7 +76,6 @@ export default function Page() {
                         gutterBottom
                         variant="h6"
                         component="div"
-                        fontFamily={"Noto"}
                         fontWeight={200}
                         textAlign={"center"}
                       >
@@ -86,7 +85,6 @@ export default function Page() {
                         gutterBottom
                         variant="h5"
                         component="div"
-                        fontFamily={"Noto Sans"}
                         fontWeight={200}
                       >
                         {item.name}
@@ -95,7 +93,6 @@ export default function Page() {
                         gutterBottom
                         variant="body2"
                         component="div"
-                        fontFamily={"Noto Sans"}
                         fontWeight={200}
                       >
                         {item.description}
@@ -123,7 +120,7 @@ export default function Page() {
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
-                      height="140"
+                      height="250"
                       image={item.image_url}
                       alt={`image of ${item.name}`}
                       sx={{ maxWidth: "100%", maxHeight: "250px", objectFit: "contain", borderRadius: "10px" }}
@@ -133,7 +130,6 @@ export default function Page() {
                         gutterBottom
                         variant="h6"
                         component="div"
-                        fontFamily={"Noto"}
                         fontWeight={400}
                         textAlign={"center"}
                       >
@@ -145,7 +141,6 @@ export default function Page() {
                         gutterBottom
                         variant="h5"
                         component="div"
-                        fontFamily={"Noto Sans"}
                         fontWeight={200}
                       >
                         {item.name}
@@ -171,7 +166,7 @@ export default function Page() {
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
-                      height="140"
+                      height="250"
                       image={item.image_url}
                       alt={`image of ${item.name}`}
                       sx={{ maxWidth: "100%", maxHeight: "250px", objectFit: "contain", borderRadius: "10px" }}
@@ -181,7 +176,6 @@ export default function Page() {
                         gutterBottom
                         variant="h6"
                         component="div"
-                        fontFamily={"Noto"}
                         fontWeight={400}
                         textAlign={"center"}
                       >
@@ -191,7 +185,6 @@ export default function Page() {
                         gutterBottom
                         variant="h5"
                         component="div"
-                        fontFamily={"Noto Sans"}
                         fontWeight={200}
                       >
                         {item.name}
@@ -200,7 +193,6 @@ export default function Page() {
                         gutterBottom
                         variant="body2"
                         component="div"
-                        fontFamily={"Noto Sans"}
                         fontWeight={200}
                       >
                         {item.description}
@@ -226,7 +218,7 @@ export default function Page() {
                   <CardActionArea sx={{ pointerEvents: "none" }}>
                     <CardMedia
                       component="img"
-                      height="140"
+                      height="250"
                       image={item.image_url}
                       alt={`image of ${item.name}`}
                       sx={{ maxWidth: "100%", maxHeight: "250px", objectFit: "contain", borderRadius: "10px" }}
@@ -236,7 +228,6 @@ export default function Page() {
                         gutterBottom
                         variant="h6"
                         component="div"
-                        fontFamily={"Noto"}
                         fontWeight={400}
                         textAlign={"center"}
                       >
@@ -246,7 +237,6 @@ export default function Page() {
                         gutterBottom
                         variant="h5"
                         component="div"
-                        fontFamily={"Noto Sans"}
                         fontWeight={200}
                       >
                         {item.name}
@@ -255,7 +245,6 @@ export default function Page() {
                         gutterBottom
                         variant="body2"
                         component="div"
-                        fontFamily={"Noto Sans"}
                         fontWeight={200}
                       >
                         {item.description}

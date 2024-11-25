@@ -36,8 +36,8 @@ export default function Page() {
 
             {/* Using Grid component to create horizontal cards */}
             <Grid container spacing={12} sx={{ textAlign: "center", justifyContent: "center" }}>
-              {getBentoInfo.rows.map((item) => (
-                <MenuCardItems item={item} />
+              {getBentoInfo.rows.map((item, index) => (
+                <MenuCardItems key={item.id || index} item={item} />
               ))}
             </Grid>
           </Box>

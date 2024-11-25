@@ -48,8 +48,8 @@ export default function Page() {
               {/* Alcohol section */}
               <Typography variant="h4">Alcoholic Beverages</Typography>
               <Grid container spacing={12} sx={{ textAlign: "center", justifyContent: "center" }}>
-                {getAlcoholInfo.rows.map((item) => (
-                  <MenuCardItems item={item} />
+                {getAlcoholInfo.rows.map((item,index) => (
+                  <MenuCardItems key={item.id || index} item={item} />
                 ))}
               </Grid>
             </Grid>

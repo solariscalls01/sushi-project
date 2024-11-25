@@ -21,8 +21,6 @@ export default function Page() {
   const theme = createTheme();
   theme.spacing(24);
 
-
-
   return (
     <div style={{
       width: "80%",
@@ -40,8 +38,8 @@ export default function Page() {
 
             {/* Using Grid component to create horizontal cards */}
             <Grid container spacing={8} sx={{ textAlign: "center", justifyContent: "center" }}>
-              {getAppetizerInfo.rows.map((item) => (
-                <MenuCardItems item={item}/>
+              {getAppetizerInfo.rows.map((item, index) => (
+                <MenuCardItems key={item.id || index} item={item}/>
               ))}
             </Grid>
           </Box>

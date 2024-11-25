@@ -183,7 +183,7 @@ const chirashi = [
     name: "Poke Don",
     price: 22,
     description: "Mixed diced marinated fish on sushi rice",
-    image_url: "/images/chirashi/poke-don.jpg",
+    image_url: "/images/chirashi/poke.jpg",
   },
   {
     name: "Unagi Don",

@@ -61,7 +61,7 @@ const itemData = [
     href: "/menu/signature-combos"
   },
   {
-    img: "/images/chirashi/Deluxe-bowl.jpg",
+    img: "/images/chirashi/daimonji-deluxe.jpg",
     title: "Deluxe Bowl",
     href: "/menu/chirashi"
   },

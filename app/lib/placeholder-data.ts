@@ -78,6 +78,13 @@ const appetizers = [
     image_url: "/images/appetizers/seaweed-salad.jpg",
   },
   {
+    name: "Chicken Karage",
+    price: 9,
+    description:
+      "Marinated to perfection and deep-fried for a golden, crispy finish, served with a zesty lemon wedge",
+    image_url: "/images/appetizers/chicken-karage.jpg",
+  },
+  {
     name: "Agadashi Tofu",
     price: 9,
     description:
@@ -91,13 +98,7 @@ const appetizers = [
       "Filled with a perfect blend of juicy pork and fresh vegetables, pan-fried to crispy perfection and served with a tangy dipping sauce",
     image_url: "/images/appetizers/gyoza.jpg",
   },
-  {
-    name: "Chicken Karage",
-    price: 9,
-    description:
-      "Marinated to perfection and deep-fried for a golden, crispy finish, served with a zesty lemon wedge",
-    image_url: "/images/appetizers/chicken-karage.jpg",
-  },
+
   {
     name: "Daimonji Wings",
     price: 8,
@@ -170,31 +171,31 @@ const chirashi = [
     name: "Salmon Don",
     price: 23,
     description: "Fresh salmon and Ikura on sushi rice",
-    image_url: "https://media.istockphoto.com/id/1431526155/photo/spicy-salmon-don.jpg?s=1024x1024&w=is&k=20&c=WYfAtIeSk2UGpbRUVK3Ofg_iu-EsTuEFhNYTZppxqnk=",
+    image_url: "/images/chirashi/salmon-don.jpg",
   },
   {
     name: "Tuna Don",
     price: 23,
     description: "Fresh tuna on sushi rice",
-    image_url: "https://cdn.pixabay.com/photo/2017/08/01/08/48/sashimi-2563650_1280.jpg",
+    image_url: "/images/chirashi/tuna-don.jpg",
   },
   {
     name: "Poke Don",
     price: 22,
     description: "Mixed diced marinated fish on sushi rice",
-    image_url: "/images/chirashi/Poke-don.jpg",
+    image_url: "/images/chirashi/poke-don.jpg",
   },
   {
     name: "Unagi Don",
     price: 25,
     description: "Broiled fresh water eel on rice and avocado",
-    image_url: "https://cdn.pixabay.com/photo/2023/04/27/04/08/unagi-7953712_1280.jpg",
+    image_url: "/images/chirashi/unagi-don.jpg",
   },
   {
     name: "Daimonji Deluxe",
     price: 28,
     description: "Seasonal Chefs choice over rice",
-    image_url: "/images/chirashi/Deluxe-bowl.jpg",
+    image_url: "/images/chirashi/daimonji-deluxe.jpg",
   },
 ];
 
@@ -225,12 +226,6 @@ const handrolls = [
     image_url: "https://cdn.pixabay.com/photo/2018/05/26/18/53/avocado-3432007_1280.jpg",
   },
   {
-    name: "Four Season",
-    price: 8.5,
-    description: "Tuna, Salmon, Yellowtail, Albacore, Green Onions",
-    image_url: "https://cdn.pixabay.com/photo/2024/05/02/18/08/rolls-8735316_1280.jpg",
-  },
-  {
     name: "Spicy Tuna",
     price: 6,
     description:
@@ -243,6 +238,12 @@ const handrolls = [
     description:
       "Tender Eel and Creamy Avocado, wrapped with Vinegared Rice and Nori",
     image_url: "/images/roll/eel-avocado.jpg",
+  },
+  {
+    name: "Four Season",
+    price: 8.5,
+    description: "Tuna, Salmon, Yellowtail, Albacore, Green Onions",
+    image_url: "https://cdn.pixabay.com/photo/2024/05/02/18/08/rolls-8735316_1280.jpg",
   },
 ];
 
@@ -345,26 +346,26 @@ const noodles = [
     name: "Tonkotsu Ramen",
     price: 14,
     description: "Savory pork broth, housemade chasu, egg, and seaweed",
-    image_url: "https://cdn.pixabay.com/photo/2022/05/10/18/50/ramen-7187810_1280.jpg",
-  },
-  {
-    name: "Tempura Udon",
-    price: 16,
-    description: "Savory broth, udon, shrimp, and veggie tempura",
-    image_url: "https://cdn.pixabay.com/photo/2019/03/19/10/12/udon-noodles-4065311_1280.jpg",
+    image_url: "/images/noodles/tonkatsu-ramen.jpg",
   },
   {
     name: "Beef Sukiyaki",
     price: 19,
     description:
       "Rich broth, thinly sliced beef, soft tofu, udon, veggies, and rice",
-    image_url: "https://cdn.pixabay.com/photo/2022/01/11/11/51/dish-6930432_1280.jpg",
+    image_url: "/images/noodles/beef-sukiyaki.jpg",
   },
   {
     name: "Yakisoba",
     price: 14,
     description: "Stir fry noodles with a choice of beef, chicken, or veggie",
-    image_url: "https://cdn.pixabay.com/photo/2021/07/12/06/15/yakisoba-6405452_1280.jpg",
+    image_url: "/images/noodles/yakisoba.jpg",
+  },
+  {
+    name: "Tempura Udon",
+    price: 16,
+    description: "Savory broth, udon, shrimp, and veggie tempura",
+    image_url: "/images/noodles/tempura-udon.jpg",
   },
 ];
 
@@ -436,6 +437,12 @@ const rolls = [
     image_url: "/images/roll/rosanna.jpg",
   },
   {
+    name: "California Roll",
+    price: 8,
+    description: "Crab, Avocado, Mayo, Cucumber, Roe",
+    image_url: "/images/roll/california-roll.jpg",
+  },
+  {
     name: "Red Devil",
     price: 22,
     description:
@@ -450,10 +457,11 @@ const rolls = [
     image_url: "/images/roll/mad-tiger.jpg",
   },
   {
-    name: "California Roll",
-    price: 8,
-    description: "Crab, Avocado, Mayo, Cucumber, Roe",
-    image_url: "/images/roll/california-roll.jpg",
+    name: "Allison",
+    price: 18,
+    description:
+      "Crab, Avocado, Cucumber, topped with Albacore, Fish Roe, Green Onion, Roe",
+    image_url: "/images/roll/allison.jpg",
   },
   {
     name: "Futomaki",
@@ -466,13 +474,6 @@ const rolls = [
     price: 15,
     description: "Wild Sockeye Salmon, Avocado, Ikura & Shiso",
     image_url: "/images/roll/happy.jpg",
-  },
-  {
-    name: "Allison",
-    price: 18,
-    description:
-      "Crab, Avocado, Cucumber, topped with Albacore, Fish Roe, Green Onion, Roe",
-    image_url: "/images/roll/allison.jpg",
   },
   {
     name: "Caterpillar",

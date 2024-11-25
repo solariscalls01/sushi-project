@@ -10,12 +10,12 @@ export default function DaimonjiLogo() {
                 <Box
                     component="img"
                     sx={{
-                        height: "200px", width: "200px",
+                        height: "600px", width: "600px",
                         maxHeight: { xs: "50px", sm: "75px", md: "125px" },
                         maxWidth: { xs: "50px", sm: "75px", md: "125px" },
                         textAlign: "center",
                         justifyContent: "center"
-                    }} alt="Daimonji logo" src="/images/logo.png" />
+                    }} alt="Daimonji logo" src="/images/DAIMONJI-LOGO.png" />
             </Link>
         </Box>
     );

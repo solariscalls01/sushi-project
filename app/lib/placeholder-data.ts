@@ -344,7 +344,7 @@ const noodles = [
   {
     name: "Tonkotsu Ramen",
     price: 14,
-    description: "Savory pork broth, housemade chasu, egg, and seawweed",
+    description: "Savory pork broth, housemade chasu, egg, and seaweed",
     image_url: "https://cdn.pixabay.com/photo/2022/05/10/18/50/ramen-7187810_1280.jpg",
   },
   {

@@ -37,7 +37,7 @@ export default function BackgroundImg() {
       altText = "Picture of a Gyoza Plate"
       break;
     case "/menu/chirashi":
-      image = "/images/chirashi/Deluxe-bowl.jpg";
+      image = "/images/chirashi/daimonji-deluxe.jpg";
       altText = "Image of the Deluxe Chirashi bowl"
       break;
     case "/menu/drinks":
@@ -50,7 +50,7 @@ export default function BackgroundImg() {
       break;
 
     case "/menu/noodles":
-      image = "/images/tonkatsu-ramen.png";
+      image = "/images/noodles/tonkatsu-ramen.jpg";
       altText = "Image of a Tonkatsu ramen bowl"
       break;
     case "/menu/signature-combos":

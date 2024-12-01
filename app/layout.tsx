@@ -8,6 +8,7 @@ import ThemeRegistry from "./themeregistry";
 export const metadata: Metadata = {
   title: "Daimonji Sushi",
   description: "Created by Brian Dy",
+  robots: 'noindex,noarchive,nofollow' // Prevents search enging crawling from accessing this website
 };
 
 export default async function RootLayout({
